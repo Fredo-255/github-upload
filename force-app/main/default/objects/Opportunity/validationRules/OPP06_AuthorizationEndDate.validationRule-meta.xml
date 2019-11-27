@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP06_AuthorizationEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AuthorizationEndDate__c  &lt;  AuthorizationStartDate__c</errorConditionFormula>
+    <errorMessage>Merci de renseigner la date de fin de service supérieur à la date de début de service</errorMessage>
+</ValidationRule>

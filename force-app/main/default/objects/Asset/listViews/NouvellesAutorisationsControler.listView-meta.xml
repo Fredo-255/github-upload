@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NouvellesAutorisationsControler</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Offre__c</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Controlled__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ASSET.STATUS</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <label>Nouvelles Autorisations à Contrôler</label>
+</ListView>

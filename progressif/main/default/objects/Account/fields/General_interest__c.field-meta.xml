@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_interest__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Attribution à l&#39;Intérêt général OUI/NON</description>
+    <externalId>false</externalId>
+    <label>Intérêt général</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,411 @@
+.formInput .slds-input {
+    background: #f0f0f0 !important;
+    border: none !important;
+    padding: 10px 20px 10px 14px !important;
+    font-family: arial,sans-serif !important;
+    width: 265px !important;
+    box-sizing: border-box !important;
+    height: 38px !important;
+	color:#666;
+	--lwc-colorTextPlaceholder: #9E9E9E;
+  }
+.formInputDate .slds-input{
+    background: #f0f0f0 !important;
+    border: none !important;
+    padding: 10px 20px 10px 14px !important;
+    font-family: arial,sans-serif !important;
+    width: 165px !important;
+    box-sizing: border-box !important;
+    height: 38px !important;
+	color:#666;
+	--lwc-colorTextPlaceholder: #9E9E9E;
+
+  }
+  
+.formInput .slds-form-element__legend{
+    font-weight: normal;
+}	
+.formInput .slds-form-element__label{
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+  }
+
+.formInput .slds-input:focus{
+    box-shadow: none;
+  }
+
+.criterion h2 
+  {
+    color: #cc1f5e!important;
+    font-family: arial,sans-serif;
+    text-transform: uppercase;
+  }
+
+.criterion h3
+  {
+    color: #cc1f5e!important;
+    font-family: arial,sans-serif;
+    line-height: 1.2;
+    margin: 0%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-block-end: 20px;
+  }
+
+.formInput .slds-input__icon{
+    position: initial !important;
+  }
+
+.formInput .iconright {
+    
+    text-align: right;
+}
+
+.formInput .iconright .slds-button_icon-border{
+    line-height: 1;
+    vertical-align: middle;
+    color:  #cc1f5e;
+    transition: border .15s linear;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.formInput .slds-button_icon-bare{
+  color:  #cc1f5e !important;	
+}
+    
+.formInput .slds-form-element__help{
+    background: url(https://sacem--salsadev7.lightning.force.com/resource/1571875060000/StyleCriterionComponent/img/error.png) no-repeat 13px center;
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    left: 600px;
+    min-width: 30px;
+    min-height: 20px;
+    box-sizing: border-box;
+    display:inline-block;
+    padding-top: 3px;
+    padding-left: 33px;
+}
+
+	
+
+.comboType .slds-combobox__form-element{
+  font-size: 13px;
+}
+
+.comboType .slds-listbox__option{
+  font-size: 13px;
+}
+
+.comboType .slds-listbox__option:hover{
+  background: #e5f6f8;
+}
+
+.comboType .slds-listbox__option:focus{
+  background: #e5f6f8;
+}
+
+.comboType .slds-combobox__input{
+  /*border-color: #00a9b9;*/
+    background: #f0f0f0 !important;
+    border: none !important;
+    padding: 10px 20px 10px 14px !important;
+    font-family: arial,sans-serif !important;
+    width: max-content !important;	
+	min-width: 265px !important;
+    box-sizing: border-box !important;
+    height: 38px !important;
+	color:#666;
+	--lwc-colorTextPlaceholder: #9E9E9E;
+}
+
+
+.comboType .slds-dropdown{
+width: max-content;	
+min-width: 265px !important;	
+}	
+
+
+.comboType .slds-combobox{
+width: max-content;
+min-width: 265px !important;	
+}
+
+.comboType .slds-icon-utility-down{
+      margin-top: -15px;
+}
+
+
+.comboType .slds-combobox__input:focus{
+  border-color: #00a9b9;
+  box-shadow: #00a9b9 0px 0px 3px;
+  
+}
+
+.sectiontitle {
+    
+  font-size: 16px;
+  font-family: arial,sans-serif;
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  }
+
+
+.formInputTextarea .slds-form-element__help{
+	 left: 720px!important;
+}	
+	
+	
+.formInput .slds-textarea{
+    width: 380px;
+    height: 5rem;
+}	
+
+.formInputTextarea .validitycheck{
+left: 720px !important;
+}	
+.validitycheck{
+  background: url(https://sacem--salsadev7.lightning.force.com/resource/1571875060000/StyleCriterionComponent/img/check.png) no-repeat 13px center;
+  font-size: 13px;
+  position: absolute;
+  bottom: 10px;
+  left: 600px;
+  min-width: 30px;
+  min-height: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 3px;
+  padding-left: 33px;
+  }
+
+/*** Bouton Next Previous***/
+.slds-float_left .btnPrevious button{
+	
+    padding: 6px 18px 6px 35px;
+    background: #cc1f5e url(https://sacem--salsadev7.lightning.force.com/resource/1571409998000/StyleCriterionComponent/img/arrow-left.png) left 10px center no-repeat;
+    color: #fff;
+    border: none;
+    font-family: arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    width:150px;
+}
+.slds-float_right .btnNext button{
+    padding: 6px 60px 6px 35px;
+    background: #cc1f5e url(https://sacem--salsadev7.lightning.force.com/resource/1571409998000/StyleCriterionComponent/img/arrow-right.png) right 10px center no-repeat;
+    color: #fff;
+    border: none;
+    font-family: arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    width:150px;
+}
+
+
+
+
+
+
+/* Chrome, Firefox, Edge Only */
+@supports (-webkit-appearance:none) {
+    .slds-card__header .slds-media__body{
+        max-height: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    } 
+}
+
+/* IE 10, IE 11 Only */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .slds-card__header .slds-media__body{
+        max-height: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    .slds-card__header.slds-grid{
+        display: block !important;
+    }
+}
+
+
+
+
+.hrSeparator {
+	margin-top: 0px;
+	margin-bottom: 18px;
+}
+
+.hrFrontSeparator {
+	margin-top: 0px;
+    margin-bottom: 9px;
+    border-top: 1px solid #e84563;
+}
+
+/* ******************************************* */
+.flip-card {
+	background-color: transparent;
+	height: 250px;
+/*	perspective: 1000px;*/
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+    text-align: justify;
+ /*   perspective: 1000px;*/
+}
+
+
+.flip {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+    
+}
+
+.slds-card__header {
+    padding: 0 1.3rem 0.3rem 0;
+    /*height: 60px;*/
+}
+
+.slds-card__header .slds-media__body{
+    white-space: normal;
+}
+
+.slds-card__header .slds-text-heading_small{
+    font-family: montserrat bold;
+    font-size: 13px;
+}
+
+.flip-card-back .slds-card__header{
+    padding: 1rem;
+    /*height: 57px;*/
+    text-align: center;
+    color: white !important;
+}
+
+h1{
+    font-weight: bold;
+}
+
+/* Style the back side */
+.flip-card-back {
+	background-color: #e84563;
+	color: white;
+	transform: rotateY(180deg);
+	padding: 20px;
+}
+
+.flip-card-back .slds-card__header-title {
+    text-align: center;
+}
+
+
+
+.frontButton:focus{
+    box-shadow: none;
+}
+
+.iconFront {
+	margin-left: 5px;
+}
+
+.iconFront svg {
+	fill: #00494d;
+}
+
+.iconFront:hover svg {
+	fill: #9fdcdf;
+}
+
+.icn {
+	backface-visibility: hidden;
+}
+
+.hide {
+	display: none !important;
+}
+
+
+/*#############################################################*/
+/*################### FAMILY CARD LOOK & FEEL ################*/
+/*#############################################################*/
+
+
+.familyCard {
+    border-radius: .25rem;
+    border: 1px solid #bdbdbd;
+   /* background: #fff;*/
+    height: 15rem;
+    box-shadow: 7px 7px 20px -5px rgba(156, 156, 156, 0.5);
+}
+
+.familyCard:hover {
+    cursor: pointer;
+    border-color:#e84563;
+    box-shadow: 7px 7px 20px -5px #ea98a7;
+}
+
+.familyCard .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.familyCard .imgContainer{
+   /* background: url(https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);*/
+    height: 65%;
+    background-size: cover;   
+    border-bottom: 3px solid #e84563;
+}
+
+.familyCard .titre{
+    color: #333;
+    font-weight: bold;
+    font-family: montserrat;
+    padding: 0;
+    max-height: 4.25rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+    padding: 10px;
+    text-align:center;
+    /*border-top: 3px solid #189eaf;*/
+}
+.familyCard .titre p{
+    font-size: 15px !important;
+    text-transform: uppercase;
+}
+
+
+
+.familyCard .cardContent{
+    padding: 0 0.75rem;
+}
+

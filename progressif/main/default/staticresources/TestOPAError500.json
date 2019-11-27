@@ -1,0 +1,6 @@
+{
+    "error-response" : {
+        "message" : "There is no service registered at: /assess/soap/generic/12.2.1/WEB_RADIO_GEN_A",
+        "code" : "com.oracle.determinations.server.exceptions.NoSuchServiceException"
+    }
+}

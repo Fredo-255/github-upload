@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Family__c</fullName>
+    <description>Permet de définir la famille de collecte d&#39;une unité organisationnelle</description>
+    <externalId>false</externalId>
+    <label>Famille de Collecte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Droits Généraux</fullName>
+                <default>false</default>
+                <label>Droits Généraux</label>
+            </value>
+            <value>
+                <fullName>Grands comptes - Nationaux</fullName>
+                <default>false</default>
+                <label>Grands comptes - Nationaux</label>
+            </value>
+            <value>
+                <fullName>Grands comptes - Cinéma</fullName>
+                <default>false</default>
+                <label>Grands comptes - Cinéma</label>
+            </value>
+            <value>
+                <fullName>Grands comptes - Spectacles</fullName>
+                <default>false</default>
+                <label>Grands comptes - Spectacles</label>
+            </value>
+            <value>
+                <fullName>Licences Online</fullName>
+                <default>false</default>
+                <label>Licences Online</label>
+            </value>
+            <value>
+                <fullName>Licences Média audiovisuels</fullName>
+                <default>false</default>
+                <label>Licences Média audiovisuels</label>
+            </value>
+            <value>
+                <fullName>Licences Phono</fullName>
+                <default>false</default>
+                <label>Licences Phono</label>
+            </value>
+            <value>
+                <fullName>Tous</fullName>
+                <default>false</default>
+                <label>Tous</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

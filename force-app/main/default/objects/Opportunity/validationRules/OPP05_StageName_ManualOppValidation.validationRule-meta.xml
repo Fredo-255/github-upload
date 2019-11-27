@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP05_StageName_ManualOppValidation</fullName>
+    <active>false</active>
+    <description>Le CC ne doit pas passer manuellement l&#39;opportunité à une  étape autres que &quot;Validation Interne&quot;</description>
+    <errorConditionFormula>Not($User.BypassVR__c ) &amp;&amp; 
+ApprovedOpportunity__c  = false &amp;&amp; 
+OR( 
+ISPICKVAL( StageName , &quot;Validation Externe&quot;),
+ISPICKVAL( StageName , &quot;Finalisée&quot;),
+ISPICKVAL( StageName , &quot;En Négociation&quot;), 
+ISPICKVAL( StageName , &quot;Cloturée_Gagnée&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Merci de ne pas passer manuellement l&#39;opportunité à une  étape autre que &quot;Validation Interne&quot; ou</errorMessage>
+</ValidationRule>

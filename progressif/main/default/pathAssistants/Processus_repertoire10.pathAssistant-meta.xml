@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Repertory__c</entityName>
+    <fieldName>Step__c</fieldName>
+    <masterLabel>Processus répertoire</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>DateContractSignature__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Merci de saisir la date de signature de contrat&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Finalisé</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>MTSLASACEMUMPI</recordTypeName>
+</PathAssistant>

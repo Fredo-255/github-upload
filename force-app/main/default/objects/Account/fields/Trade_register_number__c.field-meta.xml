@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trade_register_number__c</fullName>
+    <description>Numéro d&#39;identification au registre du commerce de l&#39;établissement issu de l&#39;INSEE</description>
+    <externalId>false</externalId>
+    <label>Numéro au registre du commerce</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReseauContract</fullName>
+    <active>true</active>
+    <label>Contrat Réseau</label>
+    <picklistValues>
+        <picklist>GeneratingEvent__c</picklist>
+        <values>
+            <fullName>Activité terrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campagne marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courrier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KeyWatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Téléphone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MeansPayment__c</picklist>
+        <values>
+            <fullName>Billet à ordre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carte bancaire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chèque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espèce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prélèvement automatique SEPA %28PBA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>prélèvement SDD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonsTermination__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dénonciation de contrat par la Sacem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erreur d%27autorisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fermeture administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intervention non motivée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de déclaration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Activé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Annulé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En cours</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Expiré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Résilié</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UnderRaisons__c</picklist>
+        <values>
+            <fullName>A cessé son activité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domaine public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Défaut de paiement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dérogation auteur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exception pédagogie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oeuvre dénaturée%2FNon-respect du droit moral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposition à vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redressement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Réclamation auteur%2Féditeur</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

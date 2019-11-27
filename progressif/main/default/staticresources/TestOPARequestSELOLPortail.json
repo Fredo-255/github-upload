@@ -1,0 +1,48 @@
+{
+   "Body": {
+      "assess-request": {
+         "config":{
+         "show-properties":"true",
+         "outcome":{
+            "entity":{
+               "@id":"global",
+               "attribute-outcome":[
+                  {
+                     "@id":"NUM_MT_HT_SACEM",
+                     "@outcome-style":"decision-report"
+                  },
+                  {
+                     "@id":"NUM_MT_HT_SACEM_UTILE",
+                     "@outcome-style":"decision-report"
+                  }
+               ]
+            }
+         }
+      },
+         "global-instance": {
+            "attribute": [
+               {
+                  "@id": "DAT_DATE_DEB_CONTRAT",
+                  "date-val": "2019-09-14"
+               },
+               {
+                  "@id": "CHR_OFFRE",
+                  "text-val": "WEB_RADIO_GEN_A"
+               },
+               {
+                  "@id": "NUM_REVENU_DSP_TARIF",
+                  "number-val": "19000"
+               },
+               {
+                  "@id": "NUM_NB_FLUX",
+                  "number-val": "2"
+               },
+               {
+                  "@id": "CHR_PERIODE",
+                  "text-val": "ANNUELLE"
+               }
+            ]
+         }
+      }
+   }
+ }

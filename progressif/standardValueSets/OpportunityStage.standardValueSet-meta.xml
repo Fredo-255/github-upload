@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Brouillon</fullName>
+        <default>false</default>
+        <label>Brouillon</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>En cours</fullName>
+        <default>false</default>
+        <label>En cours</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Clôturée - Fermée</fullName>
+        <default>false</default>
+        <label>Clôturée - Fermée</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Validation Interne</fullName>
+        <default>false</default>
+        <label>Validation Interne</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>65</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Validation Externe</fullName>
+        <default>false</default>
+        <label>Validation Externe</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>En Négociation</fullName>
+        <default>false</default>
+        <label>En Négociation</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Finalisée</fullName>
+        <default>false</default>
+        <label>Finalisée</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Terminé</fullName>
+        <default>false</default>
+        <label>Terminé</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Perdu</fullName>
+        <default>false</default>
+        <label>Perdu</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>0</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Cloturée - Gagnée</fullName>
+        <default>false</default>
+        <label>Cloturée - Gagnée</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+</StandardValueSet>

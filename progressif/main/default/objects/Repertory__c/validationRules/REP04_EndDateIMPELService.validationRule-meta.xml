@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REP04_EndDateIMPELService</fullName>
+    <active>true</active>
+    <errorConditionFormula>EndDateIMPELService__c &lt; IMPELStartDate__c</errorConditionFormula>
+    <errorMessage>Merci de renseigner la date de fin de service IMPEL supérieure à la date de début de service IMPEL</errorMessage>
+</ValidationRule>

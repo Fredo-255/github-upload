@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UmpiDrmAdvance__c</fullName>
+    <description>Montant des droits d&#39;exécution publique (DEP) et de reproduction mécanique (DRM) pour le répertoire UMPI</description>
+    <externalId>false</externalId>
+    <label>Avance UMPI DRM</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

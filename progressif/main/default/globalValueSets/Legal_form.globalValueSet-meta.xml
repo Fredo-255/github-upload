@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>A</fullName>
+        <default>false</default>
+        <label>Artisan</label>
+    </customValue>
+    <customValue>
+        <fullName>AC</fullName>
+        <default>false</default>
+        <label>Artisan Commerçant</label>
+    </customValue>
+    <customValue>
+        <fullName>ASSOC</fullName>
+        <default>false</default>
+        <label>Association</label>
+    </customValue>
+    <customValue>
+        <fullName>C</fullName>
+        <default>false</default>
+        <label>Commerçant</label>
+    </customValue>
+    <customValue>
+        <fullName>CUMA</fullName>
+        <default>false</default>
+        <label>Coopérative d&#39;utilisation de matériel agricole</label>
+    </customValue>
+    <customValue>
+        <fullName>EA</fullName>
+        <default>false</default>
+        <label>Exploitation agricole</label>
+    </customValue>
+    <customValue>
+        <fullName>EI</fullName>
+        <default>false</default>
+        <label>Entreprise individuelle</label>
+    </customValue>
+    <customValue>
+        <fullName>EPA</fullName>
+        <default>false</default>
+        <label>Etablissement public administratif</label>
+    </customValue>
+    <customValue>
+        <fullName>EPIC</fullName>
+        <default>false</default>
+        <label>Etablissement public industriel et commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>EURL</fullName>
+        <default>false</default>
+        <label>Entreprise unipersonnelle à responsabilité limitée</label>
+    </customValue>
+    <customValue>
+        <fullName>GAEC</fullName>
+        <default>false</default>
+        <label>Groupement agricole d&#39;exploitation en commun</label>
+    </customValue>
+    <customValue>
+        <fullName>GCSP</fullName>
+        <default>false</default>
+        <label>Groupement de coopération sanitaire à gestion</label>
+    </customValue>
+    <customValue>
+        <fullName>GCSPE</fullName>
+        <default>false</default>
+        <label>Groupement de coopération sanitaire à gestion privée</label>
+    </customValue>
+    <customValue>
+        <fullName>GEIE</fullName>
+        <default>false</default>
+        <label>Groupement européen d&#39;intérêt économique</label>
+    </customValue>
+    <customValue>
+        <fullName>GIE</fullName>
+        <default>false</default>
+        <label>Groupement d&#39;intérêt économique</label>
+    </customValue>
+    <customValue>
+        <fullName>GIP</fullName>
+        <default>false</default>
+        <label>Groupement d&#39;intérêt public</label>
+    </customValue>
+    <customValue>
+        <fullName>GL</fullName>
+        <default>false</default>
+        <label>Locataire gérant</label>
+    </customValue>
+    <customValue>
+        <fullName>OPHLM</fullName>
+        <default>false</default>
+        <label>Office public d&#39;habitations à loyer modéré</label>
+    </customValue>
+    <customValue>
+        <fullName>PE</fullName>
+        <default>false</default>
+        <label>Propriétaire exploitant</label>
+    </customValue>
+    <customValue>
+        <fullName>PL</fullName>
+        <default>false</default>
+        <label>Profession libérale</label>
+    </customValue>
+    <customValue>
+        <fullName>PP</fullName>
+        <default>false</default>
+        <label>(Autre) personne physique</label>
+    </customValue>
+    <customValue>
+        <fullName>RCLCA</fullName>
+        <default>false</default>
+        <label>Régie collectivité locale caractère administratif</label>
+    </customValue>
+    <customValue>
+        <fullName>SA</fullName>
+        <default>false</default>
+        <label>Société anonyme</label>
+    </customValue>
+    <customValue>
+        <fullName>SAD</fullName>
+        <default>false</default>
+        <label>Société anonyme à directoire</label>
+    </customValue>
+    <customValue>
+        <fullName>SAFER</fullName>
+        <default>false</default>
+        <label>Société d&#39;aménagement foncier et d&#39;établissement rural</label>
+    </customValue>
+    <customValue>
+        <fullName>SARL</fullName>
+        <default>false</default>
+        <label>Société à responsabilité limitée</label>
+    </customValue>
+    <customValue>
+        <fullName>SAS</fullName>
+        <default>false</default>
+        <label>Sociéte par action simplifiée</label>
+    </customValue>
+    <customValue>
+        <fullName>SASU</fullName>
+        <default>false</default>
+        <label>SA par action simplifiée à associé unique</label>
+    </customValue>
+    <customValue>
+        <fullName>SC</fullName>
+        <default>false</default>
+        <label>Société civile</label>
+    </customValue>
+    <customValue>
+        <fullName>SCA</fullName>
+        <default>false</default>
+        <label>Société en commandite par action</label>
+    </customValue>
+    <customValue>
+        <fullName>SCL</fullName>
+        <default>false</default>
+        <label>Société civile laitière</label>
+    </customValue>
+    <customValue>
+        <fullName>SCOP</fullName>
+        <default>false</default>
+        <label>Société coopérative ouvrière de production</label>
+    </customValue>
+    <customValue>
+        <fullName>SCP</fullName>
+        <default>false</default>
+        <label>Société civile professionnelle</label>
+    </customValue>
+    <customValue>
+        <fullName>SCPI</fullName>
+        <default>false</default>
+        <label>Société civile de placement collectif immobilier</label>
+    </customValue>
+    <customValue>
+        <fullName>SCS</fullName>
+        <default>false</default>
+        <label>Société en commandite simple</label>
+    </customValue>
+    <customValue>
+        <fullName>SE</fullName>
+        <default>false</default>
+        <label>Société européenne</label>
+    </customValue>
+    <customValue>
+        <fullName>SELAS</fullName>
+        <default>false</default>
+        <label>Société d&#39;exercice libéral par action simplifiée</label>
+    </customValue>
+    <customValue>
+        <fullName>SEM</fullName>
+        <default>false</default>
+        <label>Société d&#39;économie mixte</label>
+    </customValue>
+    <customValue>
+        <fullName>SICA</fullName>
+        <default>false</default>
+        <label>Société d&#39;intérêt collectif agricole</label>
+    </customValue>
+    <customValue>
+        <fullName>SICAV</fullName>
+        <default>false</default>
+        <label>Société d&#39;investissement à capital variable</label>
+    </customValue>
+    <customValue>
+        <fullName>SICOMI</fullName>
+        <default>false</default>
+        <label>Société immobilière pour le commerce et l&#39;industrie</label>
+    </customValue>
+    <customValue>
+        <fullName>SIVOM</fullName>
+        <default>false</default>
+        <label>Syndicat intercommunal à vocation multiple</label>
+    </customValue>
+    <customValue>
+        <fullName>SIVU</fullName>
+        <default>false</default>
+        <label>Syndicat intercommunal à vocation unique</label>
+    </customValue>
+    <customValue>
+        <fullName>SMIA</fullName>
+        <default>false</default>
+        <label>Société mixte d&#39;intérêt agricole</label>
+    </customValue>
+    <customValue>
+        <fullName>SNC</fullName>
+        <default>false</default>
+        <label>Société en nom collectif</label>
+    </customValue>
+    <masterLabel>Forme juridique</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

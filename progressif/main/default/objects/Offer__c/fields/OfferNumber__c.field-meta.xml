@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OfferNumber__c</fullName>
+    <description>Identifiant de l&#39;offre</description>
+    <displayFormat>OFR-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Numéro de l&#39;Offre</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,28 @@
+{
+  "orgName": "Projet CHEBS",
+  "edition": "Enterprise",
+  "features": ["PersonAccounts", "ContactsToMultipleAccounts", "ServiceCloud", "ChatterAnswersUser", "Communities"],
+  "settings": {
+    "currencySettings": {
+      "enableMultiCurrency": true
+    },
+    "accountSettings" : {
+      "enableAccountHistoryTracking": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": false
+    },
+    "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+        "enableS1EncryptedStoragePref2": false
+    },
+    "enhancedNotesSettings": {
+        "enableEnhancedNotes": true
+    },
+    "chatterSettings": {
+        "enableChatter": true
+    }
+  }
+}

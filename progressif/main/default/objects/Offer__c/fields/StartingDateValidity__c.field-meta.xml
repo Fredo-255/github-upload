@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StartingDateValidity__c</fullName>
+    <description>Date de début de validité de l&#39;offre</description>
+    <externalId>false</externalId>
+    <label>Date de début de validité</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Model_Prospecting_Mail__c</fullName>
+    <description>Définit le modèle de courrier de prospection à utiliser pour ce code NAF dans le processus de prospection automatique</description>
+    <externalId>false</externalId>
+    <label>Modèle courrier de prospection</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Café restaurant</fullName>
+                <default>false</default>
+                <label>Café restaurant</label>
+            </value>
+            <value>
+                <fullName>Générique</fullName>
+                <default>false</default>
+                <label>Générique</label>
+            </value>
+            <value>
+                <fullName>Hôtel</fullName>
+                <default>false</default>
+                <label>Hôtel</label>
+            </value>
+            <value>
+                <fullName>Magasin</fullName>
+                <default>false</default>
+                <label>Magasin</label>
+            </value>
+            <value>
+                <fullName>Salon de coiffure</fullName>
+                <default>false</default>
+                <label>Salon de coiffure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_reactivation_prospect</fullName>
+    <active>true</active>
+    <description>Un CC ne doit pas pouvoir passer un prospect du statut désactivé à Actif</description>
+    <errorConditionFormula>ISCHANGED( Status__c ) &amp;&amp; ISPICKVAL(Status__c, &quot;Actif&quot; ) &amp;&amp; ISPICKVAL(PRIORVALUE(Status__c), &quot;Désactivé&quot;) &amp;&amp; $Profile.Id = &quot;00e1w000000M4zO&quot; &amp;&amp; ISPICKVAL(Type, &quot;Prospect&quot;) &amp;&amp;  $User.BypassVR__c = false</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Merci de ne pas réactiver le Prospect s&#39;il a été désactivé</errorMessage>
+</ValidationRule>

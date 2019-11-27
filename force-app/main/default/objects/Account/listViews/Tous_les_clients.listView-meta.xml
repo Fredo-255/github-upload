@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tous_les_clients</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Statut_indicateur__c</columns>
+    <columns>Nature_du_compte__c</columns>
+    <columns>NAF_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Client</value>
+    </filters>
+    <label>Tous les clients</label>
+</ListView>

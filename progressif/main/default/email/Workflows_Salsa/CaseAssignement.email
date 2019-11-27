@@ -1,0 +1,8 @@
+La requête suivante vous a été attribuée 
+
+Compte:  {!Account.Name} 
+Contact :  {!Contact.Name} 
+Requête #:  {!Case.CaseNumber} 
+Objet:  {!Case.Subject} 
+
+merci de cliquer sur le lien suivant pour accéder a la requête:  {!Case.Link}

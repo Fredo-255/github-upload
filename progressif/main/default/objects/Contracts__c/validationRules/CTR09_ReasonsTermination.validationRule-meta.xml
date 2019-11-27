@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTR09_ReasonsTermination</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.BypassVR__c = False &amp;&amp;
+NOT(ISPICKVAL( ReasonsTermination__c ,&quot;Autre&quot;))
+&amp;&amp;
+NOT(ISPICKVAL( ReasonsTermination__c ,&quot;Modification de déclaration&quot;))
+&amp;&amp;
+NOT(ISPICKVAL( ReasonsTermination__c ,&quot;Erreur d&#39;autorisation&quot;))
+&amp;&amp;
+ISBLANK(text(UnderRaisons__c)) &amp;&amp; NOT ISBLANK(text(ReasonsTermination__c))</errorConditionFormula>
+    <errorMessage>Merci de renseigner un sous motif pour le motif renseigné</errorMessage>
+</ValidationRule>

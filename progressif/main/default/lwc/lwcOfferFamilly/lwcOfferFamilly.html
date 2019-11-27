@@ -1,0 +1,61 @@
+<template>
+  <div class="slds-grid slds-wrap">
+      <template for:each={offersFamilly} for:item="offerFami">
+            <div   key={offerFami.Id} class="slds-col slds-p-around_small slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3">
+              <div class="flip-card" >
+                      <div  data-familyid={offerFami.Id} data-familynboffers={offerFami.ChildOffer__r}  onclick={handleclickFamily} class="flip-card-inner">
+                        <!-- #####  RECTO ####-->
+                        <div class="flip-card-front familyCard">
+                           <!-- ### Image de la famille ###-->
+                          <div class="imgContainer">
+                            <!--<img src="https://sacem--salsadev6--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&versionId=0685E000000pL0R&operationContext=CHATTER&contentId=05T5E000002Kc0N" alt="Image Famille offre" />-->
+                             <img src= {offerFami.Url__c} alt="Image no dispo" />
+                          </div>
+                          <!-- ### Contenu de la famille ###-->
+                          <div class="cardContent">
+                            <!-- ### Nom famille d'offre ###-->
+                            <div class="titre">
+                              <p>{offerFami.Name}</p>
+                            </div>
+                          </div>   
+                        </div>
+                        <!-- ##### VRESO ####-->
+                        <div class="flip-card-back slds-media__body familyCard">
+                            <div class="cardContent">
+                              <!-- ### Nom famille d'offre ###-->
+                               <div class="titre slds-card__header">
+                                   <p>{offerFami.Name}</p>
+                               </div>
+                               <hr class="hrSeparator">
+                                <div>
+                                  <p>{offerFami.description__c}</p>    
+                                </div>
+                                <br>
+                                <div>
+                                   <!-- Success variant: Identifies a successful action -->
+                                   <template if:true={offerFami.Detailsprices__c}>
+                                    <!-- 
+                                  <a href={offerFami.Detailsprices__c}><lightning-button variant="Neutral" label="Accéder aux tarifs" 
+                                                    title="Accéder au detail des tarifs" 
+                                                    onclick={handleClick} class="slds-m-left_x-small slds-align_absolute-center">
+                                  </lightning-button></a>
+                                  -->
+                                  <a href={offerFami.Detailsprices__c} style="color:white; font-weight:bold"  onclick={handleclickLink}  target="_blank"> > Accéder au detail tarifs</a>
+  
+                                </template>
+                                </div>
+                              </div>   
+                        </div>
+                      </div>
+              </div>
+              
+            </div>    
+      </template>
+   <!-- Template If Empty-->
+   <template if:true={noData}>
+      <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+        <p> Aucune offre ne correspond aux caractéristiques de votre activité.  </p>
+      </div>
+   </template>
+  </div>
+</template>

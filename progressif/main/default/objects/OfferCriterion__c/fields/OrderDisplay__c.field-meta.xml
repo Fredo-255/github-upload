@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderDisplay__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Bonne pratique : saisissez comme ordre d&#39;affichage 10, 20 plutôt que 1, 2. Ainsi, vous pourrez insérer un critère plus tard sans devoir changer la numérotation !</inlineHelpText>
+    <label>Ordre d&#39;affichage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

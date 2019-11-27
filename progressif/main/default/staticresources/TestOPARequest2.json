@@ -1,0 +1,282 @@
+{
+   "Body": {
+      "assess-request": {
+         "config": {
+            "show-properties": "true",
+            "outcome": {
+               "entity": [
+                  {
+                     "@id": "ESPACE_SONO",
+                     "attribute-outcome": [
+                        {
+                           "@id": "NUM_REDEV_ESPACE_SONO",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                           "@outcome-style": "decision-report"
+                        }
+                     ]
+                  },
+                  {
+                     "@id": "global",
+                     "attribute-outcome": [
+                        {
+                           "@id": "NUM_MT_SPRE",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TRP_GLOBAL",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TR_GLOBAL",
+                           "@outcome-style": "decision-report"
+                        },
+                        {
+                           "@id": "NUM_REDEV_SACEM_THEO_TG_GLOBAL",
+                           "@outcome-style": "decision-report"
+                        }
+                     ]
+                  }
+               ]
+            }
+         },
+         "global-instance": {
+            "attribute": [
+               {
+                  "@id": "NUM_NBR_HABTNT_SPRE",
+                  "number-val": "15001"
+               },
+               {
+                  "@id": "CHR_ABATMT_TR",
+                  "text-val": "TRTG"
+               },
+               {
+                  "@id": "CHR_TYP_ETAB",
+                  "text-val": "RAM"
+               },
+               {
+                  "@id": "CHR_TYPE_CONTRAT",
+                  "text-val": "CAF_REST_PROVN"
+               },
+               {
+                  "@id": "NUM_NBR_HABTNT",
+                  "number-val": "15001"
+               },
+               {
+                  "@id": "TRU_ABATMT_CA",
+                  "boolean-val": "true"
+               },
+               {
+                  "@id": "DAT_DAT_DBT_CONTRAT",
+                  "date-val": "2019-09-01"
+               },
+               {
+                  "@id": "NUM_MT_GARDEFOU",
+                  "number-val": "uncertain"
+               },
+               {
+                  "@id": "CHR_TYPE_TARIF_SPRE",
+                  "text-val": "TG"
+               },
+               {
+                  "@id": "NUM_NBR_JOUR_HEBDO",
+                  "number-val": "5"
+               },
+               {
+                  "@id": "CHR_TYPE_TARIF",
+                  "text-val": "TG"
+               }
+            ],
+            "entity": {
+               "@id": "ESPACE_SONO",
+               "instance": [
+                  {
+                     "@id": "@ID_ESPACE_1",
+                     "attribute": [
+                        {
+                           "@id": "CHR_TYPE_ESPACE_SONO",
+                           "text-val": "Autres lieux sonorisés"
+                        },
+                        {
+                           "@id": "NUM_CONTENANCE_ESPACE",
+                           "number-val": "11"
+                        },
+                        {
+                           "@id": "NUM_NBR_MOIS_EXPL",
+                           "number-val": "12"
+                        }
+                     ],
+                     "entity": {
+                        "@id": "MOYEN_DIFF",
+                        "instance": [
+                           {
+                              "@id": "@ID_MOYEN_1_1",
+                              "attribute": [
+                                 {
+                                    "@id": "TRU_AJUST_CAL_MD",
+                                    "boolean-val": "true"
+                                 },
+                                 {
+                                    "@id": "CHR_GENRE_MOYEN_DIFF",
+                                    "text-val": "LEC_AV_HP"
+                                 },
+                                 {
+                                    "@id": "NUM_NBR_MOYEN_DIFF",
+                                    "number-val": "1"
+                                 }
+                              ]
+                           },
+                           {
+                              "@id": "@ID_MOYEN_1_2",
+                              "attribute": [
+                                 {
+                                    "@id": "TRU_AJUST_CAL_MD",
+                                    "boolean-val": "true"
+                                 },
+                                 {
+                                    "@id": "CHR_GENRE_MOYEN_DIFF",
+                                    "text-val": "LEC_NUM_AV_HP"
+                                 },
+                                 {
+                                    "@id": "NUM_NBR_MOYEN_DIFF",
+                                    "number-val": "1"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  {
+                     "@id": "@ID_ESPACE_2",
+                     "attribute": [
+                        {
+                           "@id": "CHR_TYPE_ESPACE_SONO",
+                           "text-val": "Salle de restauration"
+                        },
+                        {
+                           "@id": "NUM_CONTENANCE_ESPACE",
+                           "number-val": "30"
+                        },
+                        {
+                           "@id": "NUM_NBR_MOIS_EXPL",
+                           "number-val": "12"
+                        }
+                     ],
+                     "entity": {
+                        "@id": "MOYEN_DIFF",
+                        "instance": [
+                           {
+                              "@id": "@ID_MOYEN_2_1",
+                              "attribute": [
+                                 {
+                                    "@id": "TRU_AJUST_CAL_MD",
+                                    "boolean-val": "true"
+                                 },
+                                 {
+                                    "@id": "CHR_GENRE_MOYEN_DIFF",
+                                    "text-val": "RAD_K7_AV_HP_HI"
+                                 },
+                                 {
+                                    "@id": "NUM_NBR_MOYEN_DIFF",
+                                    "number-val": "4"
+                                 }
+                              ]
+                           },
+                           {
+                              "@id": "@ID_MOYEN_2_2",
+                              "attribute": [
+                                 {
+                                    "@id": "TRU_AJUST_CAL_MD",
+                                    "boolean-val": "true"
+                                 },
+                                 {
+                                    "@id": "CHR_GENRE_MOYEN_DIFF",
+                                    "text-val": "LEC_NUM_SS_HP"
+                                 },
+                                 {
+                                    "@id": "NUM_NBR_MOYEN_DIFF",
+                                    "number-val": "1"
+                                 }
+                              ]
+                           },
+                           {
+                              "@id": "@ID_MOYEN_2_3",
+                              "attribute": [
+                                 {
+                                    "@id": "TRU_AJUST_CAL_MD",
+                                    "boolean-val": "true"
+                                 },
+                                 {
+                                    "@id": "CHR_GENRE_MOYEN_DIFF",
+                                    "text-val": "AUTRE_AUDIO_HP"
+                                 },
+                                 {
+                                    "@id": "NUM_NBR_MOYEN_DIFF",
+                                    "number-val": "1"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  },
+                  {
+                     "@id": "@ESPACE_3",
+                     "attribute": [
+                        {
+                           "@id": "CHR_TYPE_ESPACE_SONO",
+                           "text-val": "Terrasse"
+                        },
+                        {
+                           "@id": "NUM_CONTENANCE_ESPACE",
+                           "number-val": "45"
+                        },
+                        {
+                           "@id": "NUM_NBR_MOIS_EXPL",
+                           "number-val": "9"
+                        }
+                     ],
+                     "entity": {
+                        "@id": "MOYEN_DIFF",
+                        "instance": {
+                           "@id": "MOYEN_3_1",
+                           "attribute": [
+                              {
+                                 "@id": "TRU_AJUST_CAL_MD",
+                                 "boolean-val": "true"
+                              },
+                              {
+                                 "@id": "CHR_GENRE_MOYEN_DIFF",
+                                 "text-val": "LEC_AV_HP"
+                              },
+                              {
+                                 "@id": "NUM_NBR_MOYEN_DIFF",
+                                 "number-val": "1"
+                              }
+                           ]
+                        }
+                     }
+                  }
+               ]
+            }
+         }
+      }
+   }
+}

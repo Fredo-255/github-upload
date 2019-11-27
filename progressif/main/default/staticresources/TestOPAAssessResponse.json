@@ -1,0 +1,316 @@
+{
+    "assess-response": {
+        "global-instance": {
+            "attribute": [
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TG_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 196.86,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif général SACEM HT: €196,86.",
+                            "@inferred": "true",
+                            "number-val": 196.86,
+                            "attribute-node": {
+                                "@id": "dn:1",
+                                "@entity-id": "global",
+                                "@instance-id": "global",
+                                "@hypothetical-instance": "false",
+                                "@attribute-id": "NUM_REDEV_SACEM_THEO_TG",
+                                "@type": "currency",
+                                "@text": "Tarif général SACEM : €196,86.",
+                                "@inferred": "true",
+                                "number-val": 196.86,
+                                "attribute-node": {
+                                    "@id": "dn:4",
+                                    "@entity-id": "global",
+                                    "@instance-id": "global",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_AUDV_MIN",
+                                    "@type": "currency",
+                                    "@text": "Application du minimum audiovisuel: €196,86.",
+                                    "@inferred": "true",
+                                    "number-val": 196.86,
+                                    "attribute-node": {
+                                        "@id": "dn:5",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_AUDV_ETAPE",
+                                        "@type": "currency",
+                                        "@text": "Tarif général audiovisuel seul: €117,93.",
+                                        "@inferred": "true",
+                                        "number-val": 117.93,
+                                        "attribute-node": {
+                                            "@id": "dn:6",
+                                            "@entity-id": "global",
+                                            "@instance-id": "global",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_TARIF_AUDV_SEUL",
+                                            "@type": "currency",
+                                            "@text": "Tarif général (diffusions audiovisuelles): €117,93.",
+                                            "@inferred": "true",
+                                            "number-val": 117.93,
+                                            "attribute-node": {
+                                                "@id": "dn:14",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_APPLICATION_MIN_SACEM",
+                                                "@type": "currency",
+                                                "@text": "Application du minimum SACEM: €117,93.",
+                                                "@inferred": "true",
+                                                "number-val": 117.93
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TR_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 157.49,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif réduit SACEM HT: €157,49.",
+                            "@inferred": "true",
+                            "number-val": 157.49,
+                            "attribute-node": {
+                                "@id": "dn:1",
+                                "@entity-id": "global",
+                                "@instance-id": "global",
+                                "@hypothetical-instance": "false",
+                                "@attribute-id": "NUM_REDEV_SACEM_THEO_TR",
+                                "@type": "currency",
+                                "@text": "Tarif réduit SACEM : €157,49.",
+                                "@inferred": "true",
+                                "number-val": 157.488,
+                                "attribute-node": {
+                                    "@id": "dn:4",
+                                    "@entity-id": "global",
+                                    "@instance-id": "global",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                    "@type": "currency",
+                                    "@text": "Réduction (signature dans les délais) de 20%: -€39,37",
+                                    "@inferred": "true",
+                                    "number-val": 157.488,
+                                    "attribute-node": {
+                                        "@id": "dn:7",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_AUDV_MIN",
+                                        "@type": "currency",
+                                        "@text": "Application du minimum audiovisuel: €196,86.",
+                                        "@inferred": "true",
+                                        "number-val": 196.86,
+                                        "attribute-node": {
+                                            "@id": "dn:8",
+                                            "@entity-id": "global",
+                                            "@instance-id": "global",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AUDV_ETAPE",
+                                            "@type": "currency",
+                                            "@text": "Tarif général audiovisuel seul: €117,93.",
+                                            "@inferred": "true",
+                                            "number-val": 117.93,
+                                            "attribute-node": {
+                                                "@id": "dn:9",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TARIF_AUDV_SEUL",
+                                                "@type": "currency",
+                                                "@text": "Tarif général (diffusions audiovisuelles): €117,93.",
+                                                "@inferred": "true",
+                                                "number-val": 117.93,
+                                                "attribute-node": {
+                                                    "@id": "dn:17",
+                                                    "@entity-id": "global",
+                                                    "@instance-id": "global",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_APPLICATION_MIN_SACEM",
+                                                    "@type": "currency",
+                                                    "@text": "Application du minimum SACEM: €117,93.",
+                                                    "@inferred": "true",
+                                                    "number-val": 117.93
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TRP_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 105.52,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif réduit protocolaire SACEM HT: €105,52.",
+                            "@inferred": "true",
+                            "number-val": 105.52,
+                            "attribute-node": {
+                                "@id": "dn:1",
+                                "@entity-id": "global",
+                                "@instance-id": "global",
+                                "@hypothetical-instance": "false",
+                                "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP",
+                                "@type": "currency",
+                                "@text": "Tarif réduit protocolaire SACEM : €105,52.",
+                                "@inferred": "true",
+                                "number-val": 105.51696,
+                                "attribute-node": {
+                                    "@id": "dn:4",
+                                    "@entity-id": "global",
+                                    "@instance-id": "global",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_ABATMT_TGP",
+                                    "@type": "currency",
+                                    "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 33%: -€51,97",
+                                    "@inferred": "true",
+                                    "number-val": 105.51696,
+                                    "attribute-node": {
+                                        "@id": "dn:5",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                        "@type": "currency",
+                                        "@text": "Réduction (signature dans les délais) de 20%: -€39,37",
+                                        "@inferred": "true",
+                                        "number-val": 157.488,
+                                        "attribute-node": {
+                                            "@id": "dn:9",
+                                            "@entity-id": "global",
+                                            "@instance-id": "global",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AUDV_MIN",
+                                            "@type": "currency",
+                                            "@text": "Application du minimum audiovisuel: €196,86.",
+                                            "@inferred": "true",
+                                            "number-val": 196.86,
+                                            "attribute-node": {
+                                                "@id": "dn:10",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_AUDV_ETAPE",
+                                                "@type": "currency",
+                                                "@text": "Tarif général audiovisuel seul: €117,93.",
+                                                "@inferred": "true",
+                                                "number-val": 117.93,
+                                                "attribute-node": {
+                                                    "@id": "dn:11",
+                                                    "@entity-id": "global",
+                                                    "@instance-id": "global",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TARIF_AUDV_SEUL",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général (diffusions audiovisuelles): €117,93.",
+                                                    "@inferred": "true",
+                                                    "number-val": 117.93,
+                                                    "attribute-node": {
+                                                        "@id": "dn:19",
+                                                        "@entity-id": "global",
+                                                        "@instance-id": "global",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_APPLICATION_MIN_SACEM",
+                                                        "@type": "currency",
+                                                        "@text": "Application du minimum SACEM: €117,93.",
+                                                        "@inferred": "true",
+                                                        "number-val": 117.93
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "@id": "CHR_TYPE_TARIF",
+                    "@type": "text",
+                    "text-val": "TG"
+                },
+                {
+                    "@id": "DAT_DAT_DBT_CONTRAT",
+                    "@type": "date",
+                    "date-val": "2017-07-01"
+                },
+                {
+                    "@id": "CHR_TYPE_CONTRAT",
+                    "@type": "text",
+                    "text-val": "KARTING"
+                },
+                {
+                    "@id": "CHR_LIEU_TYPE_TAXE",
+                    "@type": "text",
+                    "text-val": "METROPOLE"
+                },
+                {
+                    "@id": "TRU_AUDV_BRIEVETE",
+                    "@type": "boolean",
+                    "boolean-val": false
+                },
+                {
+                    "@id": "TRU_AUDV_PONCT",
+                    "@type": "boolean",
+                    "boolean-val": false
+                },
+                {
+                    "@id": "NUM_NBR_AUDV",
+                    "@type": "number",
+                    "number-val": 1.0
+                },
+                {
+                    "@id": "NUM_NBR_AUDIO",
+                    "@type": "number",
+                    "number-val": 0.0
+                },
+                {
+                    "@id": "NUM_NBR_SUPERFICIE",
+                    "@type": "number",
+                    "number-val": 10.0
+                },
+                {
+                    "@id": "CHR_ABATMT_TR",
+                    "@type": "text",
+                    "text-val": "TRTG"
+                }
+            ]
+        }
+    }
+}

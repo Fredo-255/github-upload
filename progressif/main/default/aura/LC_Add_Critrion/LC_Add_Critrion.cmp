@@ -1,0 +1,84 @@
+<aura:component >
+    
+<aura:attribute name="crit" type="Object" />
+
+   <!-- // Input Picklist  -->
+    <aura:if isTrue="{!v.crit.TypeCriterion__c =='Liste de selection'}">
+        <div class="slds-form-element">
+            <lightning:select class="formInput comboTypeContact" name="select" label="{!v.crit.Name}" required="{!v.crit.Mandatory__c}" aura:id="critform" value="{!v.crit.CriterionResponse__c}"   messageWhenValueMissing="{!v.crit.MessageValueMissing__c}" >
+                <option value="">--Choisir</option> 
+                <aura:iteration items="{!v.crit.CriteresValues}" var="val">
+                    <option value="{!val}">{!val}</option> 
+                </aura:iteration>
+            </lightning:select>
+            
+        </div>  
+            <aura:if isTrue="{!v.crit.SecondCriteresValues.length>0}"> 
+                <aura:iteration items="{!v.crit.SecondCriteresValues}" var="secondCrit">
+                    <aura:if isTrue="{!secondCrit.IfResponse__c == v.crit.CriterionResponse__c}"> 
+                        <c:LC_Add_CriterionSecond crit="{!secondCrit}"/>
+                    </aura:if>    
+                </aura:iteration>
+            </aura:if>
+     
+    </aura:if>
+    
+    
+    <!-- // Input Text  -->
+    <aura:if isTrue="{!v.crit.TypeCriterion__c =='Texte'}">
+        <div class="slds-form-element">
+            <lightning:input class="formInput"  type="Text" name="inputTxt1"  label="{!v.crit.Name}"  minlength ="{!v.crit.Minimum__c}" maxlength="{!v.crit.Maximum__c}" 
+             messageWhenRangeOverflow="{!v.crit.MessageRangeOverFlow__c }" messageWhenRangeUnderflow="{!v.crit.MessageRangeUnderFlow__c}" messageWhenValueMissing="{!v.crit.MessageValueMissing__c}" 
+             required="{!v.crit.Mandatory__c}" aura:id="critform" value="{!v.crit.CriterionResponse__c}" 
+             />   	
+        </div>
+        
+    </aura:if> 
+    
+    <!-- // Input Number  -->
+    <aura:if isTrue="{! v.crit.TypeCriterion__c=='Nombre' }">
+        <div class="slds-form-element">
+            <lightning:input class="formInput" label="{!v.crit.Name}" type="number" name="inputNbr1"  min="{!v.crit.Minimum__c}" max="{!v.crit.Maximum__c}"
+             required="{!v.crit.Mandatory__c}"  aura:id="critform" value="{!v.crit.CriterionResponse__c}"
+             messageWhenRangeOverflow="{!v.crit.MessageRangeOverFlow__c}" messageWhenRangeUnderflow="{!v.crit.MessageRangeUnderFlow__c}" messageWhenValueMissing="{!v.crit.MessageValueMissing__c}"
+             />                 
+        </div>    
+    </aura:if>
+    
+    <!-- // Input  Currency  -->
+    <aura:if isTrue="{! v.crit.TypeCriterion__c=='Devise' }"> 
+        <div class="slds-form-element">
+            <lightning:input class="formInput" label="{!v.crit.Name}" type="number" name="inputCurrency"  min="" max=""   required="{!v.crit.Mandatory__c}" 
+             messageWhenRangeOverflow="{!v.crit.message_Range_Overflow__c}" messageWhenRangeUnderflow="{!v.crit.MessageRangeUnderFlow__c}" messageWhenValueMissing="{!v.crit.MessageValueMissing__c}"
+             aura:id="critform" value="{!v.crit.CriterionResponse__c}" formatter="currency" step="0.01"
+             />
+        </div>
+    </aura:if>
+    <!-- // Input Date  -->
+    <aura:if isTrue="{!v.crit.TypeCriterion__c=='Date'}">
+        <div class="slds-form-element">
+            <lightning:input class="formInput" type="date"  label="{!v.crit.Name}" name="date" required="{!v.crit.Mandatory__c}"  aura:id="critform" value="{!v.crit.CriterionResponse__c}" />
+        </div>
+    </aura:if>
+    
+    <!-- // Input Checkbox  -->
+    <aura:if isTrue="{!v.crit.TypeCriterion__c=='Case à cocher'}">
+        <div class="slds-form-element">
+            <lightning:input type="checkbox"  label="{!v.crit.Name}" name="date" required="{!v.crit.Mandatory__c}"  aura:id="critform" checked="{!v.crit.CriterionResponse__c}" />
+        </div>   
+            <aura:if isTrue="{!v.crit.SecondCriteresValues.length>0}">       
+                <aura:iteration items="{!v.crit.SecondCriteresValues}" var="secondCrit">
+         
+                    <aura:if isTrue="{!and(secondCrit.IfResponse__c =='true', v.crit.CriterionResponse__c)}"> 
+                        <c:LC_Add_CriterionSecond crit="{!secondCrit}"/>
+                    </aura:if> 
+                    <aura:if isTrue="{!and(secondCrit.IfResponse__c =='false', !v.crit.CriterionResponse__c)}"> 
+                        <c:LC_Add_CriterionSecond crit="{!secondCrit}"/>
+                    </aura:if> 
+                </aura:iteration>
+            </aura:if> 
+ 
+    
+    </aura:if>
+    
+</aura:component>

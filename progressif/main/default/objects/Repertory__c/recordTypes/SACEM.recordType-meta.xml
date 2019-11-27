@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SACEM</fullName>
+    <active>false</active>
+    <label>SACEM</label>
+    <picklistValues>
+        <picklist>AdditionalFeePer__c</picklist>
+        <values>
+            <fullName>Download</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscriber month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscriber week</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Package__c</picklist>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Séparé</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step__c</picklist>
+        <values>
+            <fullName>Brouillon</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Finalisé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Négociation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perdu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation Externe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Validation interne</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

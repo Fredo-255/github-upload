@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scale__c</fullName>
+    <description>Code du Barème à utiliser pour calculer le montant de tarification</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Code du Barème à utiliser pour calculer le montant de tarification</inlineHelpText>
+    <label>Barème</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WEB_RADIO_GEN_A</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>MAD_STR_GEN_A</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>SELDR_ABO_CAF_REST_PARISN_TG</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>SELDR_ABO_HOTEL_PART_COM_TG</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>SELOL_PORTAIL_CHEBS</fullName>
+                <default>false</default>
+                <label>SELOL_PORTAIL_CHEBS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

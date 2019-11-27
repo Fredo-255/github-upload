@@ -1,0 +1,87 @@
+<template>
+
+    <!-- Progress bar -->
+    <div class="slds-p-top_large">
+        <ul class="progressbar">
+            <!--
+            <li   data-step="1" class="active" onclick={selectFromHeaderStep1}>Type d'Autorisation</li>
+            <li   data-step="2" class="" onclick={selectFromHeaderStep2}>Votre offre        </li>
+            <li   data-step="3" class="" onclick={selectFromHeaderStep3}>Votre autorisation </li>
+            <li   data-step="4" class=""  onclick={selectFromHeaderStep4}>Recapitulatif      </li>
+                -->
+                <li   data-step="1" class="active" >Types d'Autorisation</li>
+                <li   data-step="2" class="" >Sélection de l'autorisation</li>
+                <li   data-step="3" class="" >Votre demande </li>
+                <li   data-step="4" class="" >Récapitulatif </li>
+        </ul>
+
+        
+    </div>
+ 
+    <!-- Ecran famille d'offres -->
+    <div if:true={Step1} class="divcriterionbg">
+            <div class="slds-m-left_large" style="width:90%; display:inline-block;">
+                <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-12" style="width:5%;">
+                                <img src={progressurl} style="width: 13px; height: 97%;">
+                        </div>
+                        <div class="app slds-p-around_x-large slds-col slds-size_11-of-12 slds-form-element slds-form-element_horizontal criterion "> 
+                            <br>
+                            <h3>Veuillez nous donner plus d'informations</h3>
+                            <br>
+                            <lightning-combobox class="comboType formInput"
+                                name="progress" label="Type d'autorisation"
+                                value={value} placeholder="Valeur par défaut" options={options}
+                            >
+                            </lightning-combobox>
+                            <br><br>
+                            <c-lwc-offer-familly onclickfamily={handleSelectFamily} record-id={recordId}></c-lwc-offer-familly>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+   <!-- Ecran Liste des offres -->
+    <div if:true={Step2}  class="divcriterionbg">
+        <div class="slds-m-left_large" style="width:95%; display:inline-block;">
+            <br><br>
+                <c-lwc-offer-list onclickoffer={handleSelectOffer} selected-familly={selectedFamilly} record-id={recordId} onprevious={handlePrevious} ></c-lwc-offer-list>
+           <!-- <lightning-button variant="destructive" label="PRECEDENT" title="PRECEDENT" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>-->
+        </div>    
+    </div>
+
+    <!-- Ecran des critèrres -->
+    <div if:true={Step3}  class="divcriterionbg">
+            <div class="slds-m-left_large" style="width:95%; display:inline-block;">
+                <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-12" style="width:5%;">
+                            <img src={progressurl} style="width: 13px; height: 97%;">
+                        </div>
+                        <div class="slds-p-around_none slds-col slds-size_11-of-12"> 
+                            <c-lwc-criterion-list selected-offer={selectedOffer}  nboffers={nboffers} onclickprevious={handlePrevious}></c-lwc-criterion-list> 
+                        </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Ecran Recap -->
+    <div if:true={Step4}  class="divcriterionbg">
+            <div class="slds-m-left_large" style="width:95%; display:inline-block;">
+                <div class="slds-grid slds-gutters">
+                  
+                        <img src={recap}>
+                
+                </div>
+            </div>
+    </div>
+
+    <!--
+        <div class="slds-float_left">
+            <lightning-button  variant="destructive" label="PRECEDENT" title="PRECEDENT" onclick={handleClickc} class="btnPre slds-m-left_x-small"></lightning-button>
+        </div>
+        <div class="slds-float_right">
+            <lightning-button  variant="destructive" label="CONTINUER" title="CONTINUER"  onclick={handleNext2} class="btnCon slds-m-left_x-small"></lightning-button>
+        </div>
+   -->
+    <br><br>
+</template>

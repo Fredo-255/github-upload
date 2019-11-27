@@ -1,0 +1,336 @@
+<aura:component controller="LCCTRL_OfferController"
+	implements="force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,force:hasRecordId">
+
+    <!-- ===========================================================-->
+    <!-- 						Attribute		 					-->
+    <!-- ===========================================================-->
+    <lightning:notificationsLibrary 					aura:id="notifLib"				/>
+    <aura:attribute name="recordId" 					type="Id" 						/>
+	<aura:attribute name="isOpen" 						type="boolean"  default="false" />
+	<aura:attribute name="currentStep" 					type="string" 	default="1" 	/>
+    <aura:attribute name="valueSelected" 				type="String"					/>
+    <aura:attribute name="options" 						type="List" 					/>
+    <aura:attribute name="selectedValue" 				type="String" 	default="Radio"	/>
+    <aura:attribute name="offers"           			type="Offer__c[]" 				/>
+    <aura:attribute name="areaActivity"     			type="Map" 						/>
+    <aura:attribute name="criteres" 					type="Criterion__c[]" 	        />
+    <aura:attribute name="criteresTmp" 					type="Sobject[]" 				/>
+    <aura:attribute name="caneauxTmp"       			type="Sobject[]" 				/>
+    <aura:attribute name="caneauxTmpNew"    			type="Sobject[]" 				/>
+    <aura:attribute name="critMoyenTmpNew"  			type="Sobject[]" 				/>
+    <aura:attribute name="Moyens"    					type="Sobject[]" 				/>
+    <aura:attribute name="offer"    					type="string" 					/>
+    <aura:attribute name="Name" 						type="string"					/> 
+    <aura:attribute name="newasset"         			type="Asset"              		/>
+    <aura:attribute name="verif" 						type="boolean" default="false"  />
+    <aura:attribute name="NbCanal" 						type="Integer" default="1"      />
+    <aura:attribute name="NbMoyen" 						type="Integer" default="0"      />
+	    
+    <!--HANDLER -->
+    <aura:handler   name="init" value="{!this}" action="{!c.loadOptions}"   />
+    
+    
+    <!-- ===========================================================-->
+    <!-- 						UX		 							-->
+    <!-- ===========================================================-->
+
+	<div class="slds-m-around_xx-small slds-align_absolute-center" style="background-color:#EFEFEF;padding:0.5rem">
+		<span align="left">
+			<button class="slds-button slds-button_outline-brand" onclick="{!c.openModel}"
+				title="Obtenir une autorisation">Obtenir une autorisation</button>
+		</span> &nbsp;
+
+		<aura:if isTrue="{!v.isOpen}">
+
+			<!--###### MODAL BOX Start From Here ######-->
+            
+            <div role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open " >
+				<div class="slds-modal__container" style="max-width:70rem ; width:80%; height:850px">
+					<!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+					<div class="slds-modal__header">
+						<button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModel}">
+							X <span class="slds-assistive-text">Close</span>
+						</button>
+						<h2 id="header99" class="slds-text-heading--medium" style="color: #03224c;font-weight: bold;">[ OBTENIR UNE AUTORISATION ]</h2>
+                        
+						<br/>
+                        
+						<!--lightning progressIndicator start-->
+						<lightning:progressIndicator currentStep="{!v.currentStep}" type="path">
+							<lightning:progressStep label="1 - OFFRE"  	value="1"  onclick="{!c.selectFromHeaderStep1}" />
+							<lightning:progressStep label="2 - AUTORISATION "  	 	value="2"  onclick="{!c.selectFromHeaderStep2}" />
+							<lightning:progressStep label="3 - RECAPITULATIF" 	value="3"  onclick="{!c.selectFromHeaderStep3}" />
+                        </lightning:progressIndicator >
+
+					</div>
+
+					<!--###### MODAL BOX BODY Part Start From Here ######-->
+					<div class="slds-modal__content slds-p-around--medium" style="height:500px;">
+                        <aura:if isTrue="false">
+						<div class="{!v.currentStep == '1' ? 'slds-show' : 'slds-hide'}" style="text-align:center;">
+							<p>
+							<div class="slds-m-left_medium" style="width:60%; display:inline-block;">
+								<div class="slds-text-heading_medium">
+									<b><center>Information complémentaire</center></b><br></br>
+								</div>
+								<div class="slds-form-element__control">
+                                  <fieldset class="slds-box slds-theme--default slds-container--large">
+                                    <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">
+                                    </legend>
+                                    
+                                    <!-- CREATE NEW ACTIVITY AREA FORM -->
+                                    <form class="slds-form--stacked"> 
+                                        <lightning:select name="mySelect" label="Secteur d'activité :" aura:id="mySelect" value="{!v.selectedValue}">
+                                            <aura:iteration items="{!v.areaActivity}" var="item">
+                                                <option text="{!item.value}" value="{!item.key}" selected="{!item.selected}"/>
+                                            </aura:iteration>
+                                        </lightning:select><br/><br/>
+                                    </form>
+                                    <!-- / CREATE NEW ACTIVITY AREA FORM -->
+                                    
+                                </fieldset>
+									
+								</div>
+
+							</div>
+							</p>
+						</div>
+                        </aura:if>
+						<div class="{!v.currentStep == '1' ? 'slds-show' : 'slds-hide'}" style="text-align:center;">
+
+                                <div class="slds-scrollable slds-max-large" >
+                                    
+                                    <!-- Liste des Offres New-->
+                                    <aura:if isTrue="false">
+                                        <div class="c-container">
+                                            <lightning:layout multipleRows="true">
+                                                <aura:iteration items="{!v.offers}" var="Offre">
+                                                    <lightning:layoutItem size="6" padding="around-small">
+                                                        <div class="custom-box">
+                                                            <lightning:card variant="Narrow">
+                                                                <aura:set attribute="title">
+                                                                    <lightning:icon  iconName="standard:feed" size="small"/>
+                                                                    <a href=""> {! ' ' + Offre.Name}</a>
+                                                                </aura:set>
+                                                                <div>
+                                                                    <p>Les oeuvres que vous exploitez sont la création d’auteurs et de compositeurs dont le travail</p>
+                                                                </div>
+                                                                <aura:set attribute="footer">
+                                                                    <lightning:buttonIcon aura:id="Obtenir" iconName="utility:add" variant="container" alternativeText="Choisir" title="Choisir l'offre" value="{!Offre.Id}" onclick="{!c.DisplayCriteres}"  />
+                                                                    <lightning:buttonIcon aura:id="Info" iconName="utility:info" variant="container" alternativeText="Plus d'informations" title="Plus d'informations" value="{!Offre.Id}" onclick="{!c.displayOffre}" />
+                                                                </aura:set>
+                                                            </lightning:card>
+                                                        </div>    
+                                                    </lightning:layoutItem>
+                                                </aura:iteration>     
+                                            </lightning:layout>
+                                        </div>   
+                                    </aura:if>   
+                                    
+                                    <!-- Liste des Offres OLD à -->
+                                    <aura:if isTrue="false">
+                                        <aura:iteration items="{!v.offers}" var="Offre">
+                                            <fieldset class="slds-box slds-theme--default slds-container--large ">
+                                                
+                                                <lightning:card variant="Narrow">
+                                                    <aura:set attribute="title">
+                                                        <lightning:icon  iconName="standard:feed" size="small"/>
+                                                        <a href=""> {! ' ' + Offre.Name}</a>
+                                                    </aura:set>
+                                                    <div class="">
+                                                        <p>Les oeuvres que vous exploitez sont la création d’auteurs et de compositeurs dont le travail</p>
+                                                    </div>
+                                                    <aura:set attribute="footer">
+                                                        <lightning:button aura:id="Obtenir" name='Obtenir une autorisation' label="Obtenir une autorisation" title="Choisir l'offre" value="{!Offre.Id}"   class="slds-button slds-button_success" onclick="{!c.DisplayCriteres}" iconName="utility:automate" iconPosition="left"/>
+                                                        <lightning:button aura:id="Info"    name='Informations' label="Plus d'informations" title="Voir+" value="{!Offre.Id}"  onclick="{!c.displayOffre}" class="slds-button slds-button_destructive" iconName="utility:info" iconPosition="left"/>    
+                                                    </aura:set>
+                                                </lightning:card>
+                                                
+                                            </fieldset><br/>
+                                            
+                                        </aura:iteration>    
+                                    </aura:if>
+                                    
+                                    <!-- CARD NEW -->
+                                    <aura:if isTrue="true">
+                                    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+                                        <aura:iteration items="{!v.offers}" var="Offre">
+                                           
+                                            <div class="slds-size_1-of-3" onclick="{!c.DisplayCriteres}" id="{!Offre.Id}">    
+                                                <div draggable="true" class="slds-app-launcher__tile slds-text-link_reset slds-is-draggable slds-box slds-box_x-small slds-m-around_x-small">
+                                                    <div class="slds-app-launcher__tile-figure" >
+                                                        <span class="slds-avatar slds-avatar_large">
+                                                            <abbr class="slds-avatar__initials slds-icon-custom-45" title="Sales Cloud">O</abbr>
+                                                        </span>
+                                                        <lightning:icon  iconName="utility:rows" size="x-small"/>
+                                                    </div>
+                                                    
+                                                    <div class="slds-app-launcher__tile-body" >
+                                                        <a href="" onclick="{!c.DisplayCriteres}" id="{!Offre.Id}" >{! ' ' + Offre.Name}</a>
+                                                        <p>Les oeuvres que vous exploitez sont la création d’auteurs...
+                                                            <a href="" id="{!Offre.Id}"  onclick="{!c.displayOffre}"> Plus d'infos</a>
+                                                        </p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                               <!-- <c:LC_Etiquette_Offre offre="{!Offre}" imageUrl="" />-->
+                                        </aura:iteration>    
+                                    </div></aura:if>
+                                </div> 
+						</div>
+						<div class="{!v.currentStep == '2' ? 'slds-show' : 'slds-hide'}" style="text-align:center;">
+
+							<div class="slds-scrollable slds-max-medium" style="width:60%; display:inline-block;">
+                                
+                            <!-- Liste des critères-->
+                                <aura:if isTrue="{!v.criteresTmp.length>0 ||v.caneauxTmp.length>0}">
+
+                                    <form class="slds-form">                               
+                                        <fieldset class="slds-box slds-theme--default slds-container--large">    
+                                            <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">
+                                                Critère standard
+                                            </legend>
+                                            
+                                            <aura:iteration items="{!v.criteresTmp}" var="crit">
+                                                <c:LC_Add_Critrion crit="{!crit}"/>
+                                            </aura:iteration>   
+                                        </fieldset> 
+                                        <aura:iteration items="{!v.caneauxTmp}" var="cus" indexVar="key">
+                                            <fieldset class="slds-box slds-theme--default slds-container--large">
+                                                <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">
+                                                    Espace de diffusion : {!cus.key}
+                                                </legend>
+                                                <fieldset class="slds-box slds-theme--default slds-container--large">                                  
+                                                    <aura:iteration items="{!cus.value}" var="val">
+                                                        <aura:if isTrue="{!val.Cible__c=='Espace de diffusion'}">
+                                                            <c:LC_Add_Critrion crit="{#val}"/>   
+                                                        </aura:if>  
+                                                    </aura:iteration>
+                                                    <aura:iteration items="{!cus.moyens}" var="moyen" indexVar="key">
+                                                        <br/>
+                                                        Moyen de diffusion : {!moyen.key}
+                                                        <aura:iteration items="{!moyen.value}" var="moyenCrit">
+                                                            <c:LC_Add_Critrion crit="{#moyenCrit}"/> 
+                                                        </aura:iteration>    
+                                                    </aura:iteration>
+                                                    <a href="" onclick="{!c.addNewMoyen}" id="{!cus.key}">Ajouter un Moyen</a>
+                                                    <br></br>
+                                                    <br/> 
+                                                </fieldset>
+                                            </fieldset>  
+                                        </aura:iteration> 
+                                        <br/>
+                                    </form>  
+                                        <button class="slds-button slds-button--brand" onclick="{!c.addNewCanal}">Ajouter Espace</button>
+                               
+                                <aura:set attribute="else">
+                                    <ui:message title="Erreur" severity="error" >
+                                            <lightning:icon iconName="utility:error" alternativeText="Error!" variant="error" size="small"/>   
+                                            <span>&nbsp;</span>Aucun critère renseigné pour cette offre ! <br/>
+                                    </ui:message>
+                                </aura:set>
+                                
+                            </aura:if>
+                            <aura:if isTrue="false">
+                            <fieldset class="slds-box slds-theme--default slds-container--large">
+                                     <legend id="newexpenseform" class="slds-text-heading--small slds-p-vertical--medium">
+                                         Espace de diffusion
+                                     </legend>
+                    		 <aura:iteration items="{!v.caneauxTmp}" var="cus" indexVar="key">
+                               <fieldset class="slds-box slds-theme--default slds-container--large">                                  
+                                   <aura:iteration items="{!cus.value}" var="val">
+                                       <aura:if isTrue="{!val.Cible__c=='Espace de diffusion'}">
+                                       <c:LC_Add_Critrion crit="{!val}"/>   
+                                       </aura:if>    
+                                   </aura:iteration>
+                                   <a href="" onclick="{!c.afficher}">Ajouter un Moyen</a>
+                                   
+                               </fieldset>
+                                 <br></br>
+                                 <div class="{!v.verif==true ? 'slds-show' : 'slds-hide'}">
+                                     <aura:iteration items="{!cus.value}" var="val">
+                                         <aura:if isTrue="{!val.Cible__c=='Moyen de diffusion'}">
+                                             <c:LC_Add_Critrion crit="{!val}"/>   
+                                         </aura:if>    
+                                     </aura:iteration>
+                                 </div>
+                                 <br/>
+                             </aura:iteration> 
+                                <br/>
+                                <button class="slds-button slds-button--brand" onclick="{!c.addNewCanal}">Ajouter un canal</button>
+                               </fieldset>
+                               </aura:if>
+								
+							</div>
+
+						</div>
+                        <div class="{!v.currentStep == '3' ? 'slds-show ' : 'slds-hide'}" >
+                            <div>
+                            <fieldset class="slds-box slds-theme--default slds-container--large">
+                                <legend id="recap" class="slds-text-heading--small slds-p-vertical--medium">
+                                    RÉCAPITULATIF DE VOTRE DEMANDE D'AUTORISATION 
+                                </legend>
+                                <div class="slds-scrollable slds-max-medium"  >
+                                    <header class="slds-theme_shade slds-p-around_medium slds-m-bottom_small">
+                                        <div>
+                                            <div class="slds-grid slds-grid_align-spread slds-p-bottom_x-small " id="progress-bar-label-id-4">
+                                                <span><b><center>Autorisation : {!v.newasset.Name}</center></b></span>
+                                                <span aria-hidden="true">
+                                                    <strong>100%</strong>
+                                                </span>
+                                            </div>
+                                            <div class="slds-progress-bar slds-progress-bar_circular" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-labelledby="progress-bar-label-id-4" role="progressbar">
+                                                <span class="slds-progress-bar__value slds-progress-bar__value_success" style="width:100%">
+                                                    <span class="slds-assistive-text">Progress: 100%</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                    </header>
+									<br></br>		
+                                    <!-- Liste des critères-->
+
+                                    <aura:if isTrue="{!v.newasset.Criterion_of_authorization__r.length>0}">
+                                        <ul class="slds-has-dividers_around-space">      
+                                            <aura:iteration items="{!v.newasset.Criterion_of_authorization__r}" var="autorisationcrit">              
+                                                <li class="slds-item">
+                                                    <lightning:tile label="{!autorisationcrit.criterion_Label__c}" href="" class="slds-text-heading_small">
+                                                        <p class="slds-text-heading_small">{!autorisationcrit.criterion_response_authz__c}</p>
+                                                    </lightning:tile>
+                                                </li>
+                                                <br/>
+                                            </aura:iteration> 
+                                        </ul>
+                                    </aura:if>
+                                   </div>     
+                            </fieldset>
+                            </div>
+                        </div>    
+					</div>
+
+					<!--###### MODAL BOX FOOTER Part Start From Here ######-->
+					<div class="slds-modal__footer slds-modal__footer_directional">
+						<button disabled="{!v.currentStep == '2'  ? '' : 'disabled'}"
+							class="slds-button slds-button--neutral" onclick="{!c.moveBack}">Précédent</button>
+						<aura:if isTrue="{!v.currentStep == '1'}">
+							<button class="slds-button slds-button--brand"
+								onclick="{!c.moveNext}">Suivant</button>
+						</aura:if>
+                        <aura:if isTrue="{!v.currentStep == '2'}">
+							<button class="slds-button slds-button--brand"
+								onclick="{!c.saveCriteres}">Save</button>
+						</aura:if>
+                        <aura:if isTrue="{!v.currentStep == '3'}">
+							<button class="slds-button slds-button--brand"
+								onclick="{!c.closeModel}">Fermer</button>
+						</aura:if>
+					</div>
+				</div>
+			</div>
+			<div class="slds-backdrop slds-backdrop--open"></div>
+               
+			<!--###### MODAL BOX Part END Here ######-->
+		</aura:if>
+	</div>
+</aura:component>

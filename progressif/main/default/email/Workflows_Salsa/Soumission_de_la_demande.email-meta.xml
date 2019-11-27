@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LogoSACEMCommunity</letterhead>
+    <name>Soumission de la demande de l&#39;approbation du répertoire</name>
+    <style>freeForm</style>
+    <subject>Demande d&#39;approbation</subject>
+    <textOnly>Bonjour ,
+
+Merci d&#39;approuver le répertoire {!Repertory__c.Name} de l&#39;opportunité {!Repertory__c.Opportunity__c}
+{!Repertory__c.Link}
+
+Cordialement,
+{!User.Name}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

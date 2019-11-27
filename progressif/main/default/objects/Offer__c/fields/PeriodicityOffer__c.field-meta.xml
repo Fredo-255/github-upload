@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PeriodicityOffer__c</fullName>
+    <description>Permet de définir la périodicité de l&#39;offre</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permet de définir la périodicité de l&#39;offre</inlineHelpText>
+    <label>Périodicité de l&#39;offre</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abonnement d&#39;un an renouvelable</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>Abonnement non renouvelable</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>Evénement occasionnel</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

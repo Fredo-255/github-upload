@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValueOfferFamily__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Famille d&#39;offre</label>
+    <referenceTo>OfferFamily__c</referenceTo>
+    <relationshipLabel>Offres</relationshipLabel>
+    <relationshipName>ChildOffer</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

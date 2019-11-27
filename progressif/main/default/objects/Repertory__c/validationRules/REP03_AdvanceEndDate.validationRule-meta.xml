@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REP03_AdvanceEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AdvanceEndDate__c  &lt; AdvanceStartingDate__c</errorConditionFormula>
+    <errorMessage>Merci de renseigner la date de fin Avance supérieure à la date de début Avance</errorMessage>
+</ValidationRule>

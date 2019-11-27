@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Contracts__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Contrat Online</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>ReasonsTermination__c</fieldNames>
+        <fieldNames>UnderRaisons__c</fieldNames>
+        <fieldNames>Other__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;Merci de renseigner les motifs de résiliation.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Si vous choisissez les motifs &amp;quot;Erreur d&amp;#39;autorisation&amp;quot;, &amp;quot;Modification de déclaration&amp;quot; ou &amp;quot;Autres&amp;quot; alors merci de renseigner le champ &amp;quot;Autre&amp;quot;.&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Résilié</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>OnlineContract</recordTypeName>
+</PathAssistant>

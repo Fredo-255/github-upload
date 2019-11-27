@@ -1,0 +1,74 @@
+ Case.TerminationRequest: In field: businessProcess - no BusinessProcess named Case.Demande client de résiliation found, OK ?
+ Offer__c-Présentation Offre: In field: relatedList - no CustomField named OfferOutcome__c.Offer__c found, OK
+ Opportunity-Local: In field: field - no CustomField named Opportunity.Manager__c found, OK-Layout supprimée
+ CriterionAuthorization__c-Présentation Critère de l%E2%80%99autorisation: In field: relatedList - no CustomField named RateLine__c.CriterionAuthorization__c found, OK
+ Code_NAF__c-Présentation Code NAF: In field: relatedList - no CustomField named Account.NAF_Code__c found, OK
+ Unite_organisationnelle__c-Présentation Unité organisationnelle: In field: relatedList - no CustomField named Contact.Organizational_Unit__c found,
+ Contracts__c-Community Contrat Online: In field: QuickAction - no QuickAction named Contracts__c.CancellationCase found,
+ Contracts__c-Contrat Online: In field: QuickAction - no QuickAction named Contracts__c.CancellationCase found,
+ Contracts__c-Contrat Réseau: In field: QuickAction - no QuickAction named Contracts__c.CancellationCase found,
+ Contracts__c.CancellationCase: In field: TargetRecordType - no RecordType named Case.TerminationRequest found,
+
+
+
+
+ Unite_organisationnelle__c-Présentation Unité organisationnelle: In field: relatedList - no CustomField named User_OU__c.Organisational_unit__c found,
+ Criterion__c-Présentation Critères: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ OfferCriterion__c-Présentation Critère de l%27offre: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ Offer__c-Présentation Offre: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ CriterionAuthorization__c-Présentation Critère de l%E2%80%99autorisation: Error parsing file: Element {http://soap.sforce.com/2006/04/metadata}showEmailCheckbox invalid at this location in type RelatedListItem,
+ Contracts__c.CancellationCase: Invalid literal value for picklist:Demande de résiliation,Code_NAF__c-Présentation Code NAF: In field: QuickAction - no QuickAction named FeedItem.RypplePost found,
+ Case.TerminationRequest: Picklist value: Question in picklist: Type not found
+
+
+
+ Code_NAF__c-Présentation Code NAF: In field: QuickAction - no QuickAction named FeedItem.RypplePost found,
+ Criterion__c-Présentation Critères: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ OfferCriterion__c-Présentation Critère de l%27offre: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ Offer__c-Présentation Offre: Le ActionId spécifié n'était pas valide pour le ActionType QuickAction.,
+ Unite_organisationnelle__c-Présentation Unité organisationnelle: In field: QuickAction - no QuickAction named FeedItem.RypplePost found
+
+
+
+ -----
+
+
+ Asset-Asset Layout: In field: field - no CustomField named Asset.DiffusionPoint__c found,
+ Rate__c-Présentation Tarif: In field: QuickAction - no QuickAction named FeedItem.RypplePost found,
+ Repertory__c-LO - Greater of: In field: QuickAction - no QuickAction named FeedItem.RypplePost found,
+ Repertory__c-Présentation Répertoire: In field: QuickAction - no QuickAction named FeedItem.RypplePost found
+
+
+ TrackingMyTasks/MyFutureTasks: filterlanguage: Valeur incorrecte spécifiée : 48.,
+ TrackingMyTasks/MyLateTasks: filterlanguage: Valeur incorrecte spécifiée : 48.,
+ Tasks/EAtsIZJSQnYSMgbpjJeODgjRFqREph: In field: report - no Report named TrackingMyTasks/MyFutureTasks found
+
+
+ Account-Community Personne morale: In field: field - no CustomField named Account.NAF_Code__c found,
+ Account-Personne morale: In field: field - no CustomField named Account.NAF_Code__c found,
+ PersonAccount-Community Personne Physique: In field: field - no CustomField named PersonAccount.Dont_contact_by_phone__c found,
+ PersonAccount-Personne Physique: In field: field - no CustomField named PersonAccount.TYPE_SMART__c found
+
+ Account.Legal_form__c: The global picklist cannot be resolved,
+ Account-Community Personne morale: In field: field - no CustomField named Account.Legal_form__c found,
+ PersonAccount-Personne Physique: In field: field - no CustomField named PersonAccount.Do_not_contact_by_phone__pc found,
+ Account-Personne morale: In field: field - no CustomField named Account.Legal_form__c found
+
+ ---
+
+RapportOnline/OnlineFO/MyRepPerStepAndSignatureDate: Cannot find folder:OnlineFO,
+RapportOnline/OnlineFO/OppTousRepertoireNonModif30J: Cannot find folder:OnlineFO,
+RapportOnline/OnlineAdmin: Required field is missing: format,
+RapportOnline/OnlineFO: Required field is missing: format,
+RapportOnline/OnlineFO/Opp_Mes_Rep_validation_interne_Jlb: Cannot find folder:OnlineFO,
+RapportOnline/OnlineFPA/ContractsAndAuthorizationsRenewed: Cannot find folder:OnlineFPA,
+RapportOnline/OnlineFO/OpportunitiesOpenByTerritory: Cannot find folder:OnlineFO,
+RapportOnline/OnlineFPA: Required field is missing: format,
+RapportOnline/OnlineFPA/AUT_AutorisationsCreatedControled: Cannot find folder:OnlineFPA,
+RapportOnline/OnlineFPA/AutorizationsControlledLast3Months1: Cannot find folder:OnlineFPA,
+RapportOnline/OnlineFO/Opp_des_Rep_IMPEL_Ts9: Cannot find folder:OnlineFO
+
+
+
+RapportOnline/OnlineFO/MyRepPerStepAndSignatureDate: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,
+RapportOnline/OnlineFPA/AUT_AutorisationsCreatedControled: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/OnlineFPA/AutorizationsControlledLast3Months1: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/OpportunitiesOpenByTerritory: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/Opp_des_Rep_IMPEL_Ts9: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/OnlineFPA/ContractsAndAuthorizationsRenewed: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/OppTousRepertoireNonModif30J: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>,RapportOnline/Opp_Mes_Rep_validation_interne_Jlb: duplicate value found: <unknown> duplique une valeur dans l'enregistrement ID : <unknown>

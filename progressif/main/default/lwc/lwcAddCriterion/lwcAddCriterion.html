@@ -1,0 +1,309 @@
+<template>
+
+<!-- SECTION-->
+<template if:true={IsSection}>
+            <div class="slds-form-element slds-form-element_horizontal">
+                  <template if:true={HasHelptext}>
+                        <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+                  </template>
+                  <p class="sectiontitle">{crit.TECH_LabelToDisplay__c}</p>
+                 
+            </div>
+</template>      
+
+<!-- TEXT FIELD-->
+<template if:true={IsText}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="Text" class="formInput"
+                  required={IsRequired} name="inputTxt1" 
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  label={crit.TECH_LabelToDisplay__c} 
+                  value={crit.criterion__r.DefaultValue__c}
+                  minlength={crit.Minlength__c}
+                  maxlength={crit.Maxlength__c}
+                  message-when-too-short={crit.MessageWhenTooShort__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  message-when-too-long={crit.MessageWhenTooLong__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+                  
+            ></lightning-input> 
+            <div class="validityinput"></div>	
+      </div>
+</template>
+
+<!-- TEXTAREA FIELD-->
+<template if:true={IsTextArea}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-textarea name="inputTxt1" class="formInputTextarea formInput"
+                  required={IsRequired}
+                  value={crit.criterion__r.DefaultValue__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  label={crit.TECH_LabelToDisplay__c}
+                  message-when-bad-input="Merci de réessayer"
+                  maxlength={crit.Maxlength__c}
+                  minlength={crit.Minlength__c}
+                  message-when-too-long={crit.MessageWhenTooLong__c}
+                  message-when-too-short={crit.MessageWhenTooShort__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+                  onreset={resetValidity}
+            ></lightning-textarea>
+            <div class="validityinput formInputTextarea" style="left: 720px"></div>
+      </div>
+</template>
+
+<!-- EMAIL FIELD-->
+<template if:true={IsEmail}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="email" class="formInput"
+                  required={IsRequired}
+                  value={crit.criterion__r.DefaultValue__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  label={crit.TECH_LabelToDisplay__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+            ></lightning-input>
+            <div class="validityinput"></div>	
+      </div>
+</template>
+
+<!-- TELEPHONE FIELD pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" -->
+<template if:true={IsPhone}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="tel" class="formInput"
+                  required={IsRequired}
+                  value={crit.criterion__r.DefaultValue__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  label={crit.TECH_LabelToDisplay__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  message-when-bad-input="Format de téléphone incorrect ,merci de réessayer !"
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+                  >
+            </lightning-input>
+            <div class="validityinput"></div>	
+      </div>
+</template>
+
+<!-- NUMBER FIELD -->
+<template if:true={IsNumber}>
+      <div class="slds-form-element slds-form-element_horizontal">
+                  <template if:true={HasHelptext}>
+                        <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+                  </template>
+            <lightning-input type="number" class="formInput" 
+                  required={IsRequired} name="inputnb1" 
+                  label={crit.TECH_LabelToDisplay__c} 
+                  value={crit.criterion__r.DefaultValue__c}
+                  maxlength={crit.Maxlength__c}
+                  minlength={crit.Minlength__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  message-when-range-underflow={crit.MessageRangeUnderFlow__c}
+                  message-when-range-overflow={crit.MessageRangeOverFlow__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+            ></lightning-input> 
+            <div class="validityinput"></div>		
+      </div>
+</template>
+
+<!-- CURRENCY FIELD -->
+<template  if:true={IsCurrency}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="number" class="formInput" 
+                  required={IsRequired} 
+                  name="inputCurrency" 
+                  label={crit.TECH_LabelToDisplay__c}
+                  value={crit.criterion__r.DefaultValue__c}
+                  formatter="currency" step="0.01" 
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  max={crit.Maximum__c}
+                  min={crit.Minimum__c}
+                  message-when-range-underflow={crit.MessageRangeUnderFlow__c}
+                  message-when-range-overflow={crit.MessageRangeOverFlow__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+            ></lightning-input> 
+            <div class="validityinput"></div>		
+      </div>
+</template >
+
+<!--Adresse/ Texte area--> 
+
+
+<!-- Percent-->
+<template  if:true={IsPercent}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                        <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="number" class="formInput" 
+                  required={IsRequired} 
+                  name="inputCurrency" 
+                  label={crit.TECH_LabelToDisplay__c}
+                  value={crit.criterion__r.DefaultValue__c}
+                  formatter="percent" step="0.01" 
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  max={crit.Maximum__c}
+                  min={crit.Minimum__c}
+                  message-when-range-underflow={crit.MessageRangeUnderFlow__c}
+                  message-when-range-overflow={crit.MessageRangeOverFlow__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+                  onchange={handleChangeValue}
+            ></lightning-input> 
+            <div class="validityinput"></div>		
+      </div>
+</template >
+
+
+
+<!-- Date-->
+<template if:true={IsDate}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input type="date" class="formInputDate formInput"
+                  required={IsRequired} name="inputdate1"
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  label={crit.TECH_LabelToDisplay__c}
+                  value={crit.criterion__r.DefaultValue__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  onchange={handleChangeValue}
+            ></lightning-input> 	
+            <div class="validityinput"></div>	
+      </div>
+</template>
+
+<!-- Picklist-->
+<template if:true={IsPicklist}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-combobox class="comboType formInput"
+                  name="Picklist"
+                  required={IsRequired}
+                  label={crit.TECH_LabelToDisplay__c}
+                  value={crit.criterion__r.DefaultValue__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  options={options}
+                  onchange={handleChangeSelect}
+            ></lightning-combobox>
+            <div class="validityinput"></div>	
+      </div>
+      <template if:true={HasSecondCrit}>
+                  <template for:each={ChildSecondaryCriterion} for:item="secondCrit">
+                              <div key={secondCrit.Id}>
+                              <!--  <c-lwc-add-criterion-second crit={secondCrit} selectedvaluepicklist={selectedvalue}></c-lwc-add-criterion-second>-->
+                              <c-lwc-add-criterion crit={secondCrit}></c-lwc-add-criterion>
+                              </div>
+                  </template>
+
+      </template>
+</template>
+
+<!-- Toogle-->
+<template if:true={IsToogle}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-input class="formInput" 
+                  type="toggle" required={IsRequired} 
+                  label={crit.TECH_LabelToDisplay__c} 
+                  name="Toogle"  
+                  onchange={handleChangeSelect}
+            ></lightning-input>
+            <div class="validityinput"></div>	
+      </div>      
+            
+</template>
+<!--<lightning-button variant="base" label="Save Crit One" title="Base action" onclick={SaveCritOne} class="slds-m-left_x-small"></lightning-button>-->
+      
+
+<!-- TEXT FIELD-->
+<template if:true={IsUrl}>
+      <div class="slds-form-element slds-form-element_horizontal">
+             <template if:true={HasHelptext}>
+                   <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+             </template>
+            <lightning-input type="text" required={IsRequired} name="inputUrl1" class="formInput" 
+                  label={crit.TECH_LabelToDisplay__c}
+                  value={crit.criterion__r.DefaultValue__c}
+                  placeholder={crit.criterion__r.PlaceHolder__c}
+                  minlength={crit.Minlength__c}
+                  maxlength={crit.Maxlength__c}
+                  message-when-too-short={crit.MessageWhenTooShort__c}
+                  message-when-value-missing={crit.MessageValueMissing__c}
+                  message-when-too-long={crit.MessageWhenTooLong__c}
+                  onchange={handleChangeValue}
+                  pattern={crit.FormatCriterion__c}
+                  message-when-pattern-mismatch ={crit.messageWhenPatternMismatch__c}
+            ></lightning-input>
+            <div class="validityinput"></div>	 	
+      </div>
+</template>
+
+<!-- Bouton Radio-->
+
+
+<template if:true={IsRadio}>
+      <div class="slds-form-element slds-form-element_horizontal">
+            <template if:true={HasHelptext}>
+                  <lightning-helptext content={crit.helpText__c}></lightning-helptext> 
+            </template>
+            <lightning-radio-group class="formInput"
+                  required={IsRequired}
+                  label={crit.TECH_LabelToDisplay__c}
+                  options={options}
+                  value={crit.criterion__r.DefaultValue__c}
+                  type="radio"
+                  onchange={handleChangeSelect}
+                  >
+            </lightning-radio-group>
+            <div class="validityinput"></div>	
+      </div> 
+            <template if:true={HasSecondCrit}>
+                        <template for:each={ChildSecondaryCriterion} for:item="secondCrit">
+                                    <div key={secondCrit.Id}>
+                                    <!--  <c-lwc-add-criterion-second crit={secondCrit} selectedvaluepicklist={selectedvalue}></c-lwc-add-criterion-second>-->
+                                    <c-lwc-add-criterion crit={secondCrit}></c-lwc-add-criterion>
+                                    </div>
+                        </template>
+
+            </template>
+                 
+ 
+</template>
+
+</template>

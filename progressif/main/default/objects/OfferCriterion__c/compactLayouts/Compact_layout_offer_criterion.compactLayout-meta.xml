@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compact_layout_offer_criterion</fullName>
+    <fields>Offer__c</fields>
+    <fields>criterion__c</fields>
+    <fields>CriterionToSendToOPA__c</fields>
+    <fields>OPACriterionName__c</fields>
+    <fields>Status__c</fields>
+    <label>Présentation compacte critère de l&#39;offre</label>
+</CompactLayout>

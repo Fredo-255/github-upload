@@ -1,0 +1,43 @@
+<aura:component >
+
+<aura:attribute name="crit" type="Object" />
+   <!-- // Input Picklist  -->
+    <aura:if isTrue="{!v.crit.criterion__r.TypeCriterion__c=='Liste de selection'}">
+        <lightning:select class="formInput comboTypeContact" name="select" label="{!v.crit.criterion__r.Name}" required="{!v.crit.Mandatory__c}" aura:id="critform" value="{!v.crit.Valeur__c}" >
+            <aura:iteration items="{!v.crit.CriteresValues}" var="val">
+                <option value="{!val}">{!val}</option> 
+            </aura:iteration>
+            
+          
+        </lightning:select> 
+    </aura:if>
+    
+    <!-- // Input Text  -->
+    <aura:if isTrue="{!v.crit.criterion__r.TypeCriterion__c=='Texte'}">
+        <lightning:input type="Text" name="inputTxt1" minlength ="{!v.crit.Minimum__c}" maxlength="{!v.crit.Maximum__c}"  
+         label="{!v.crit.criterion__r.Name}"  required="{!v.crit.Mandatory__c}" aura:id="critform" value="{!v.crit.Valeur__c}"
+         messageWhenRangeOverflow="{!v.crit.MessageRangeOverFlow__c}" messageWhenRangeUnderflow="{!v.crit.MessageRangeUnderFlow__c}" messageWhenValueMissing="{!v.crit.MessageValueMissing__c}" 
+        />   	
+    </aura:if> 
+    
+    <!-- // Input Number  -->
+    <aura:if isTrue="{!v.crit.criterion__r.TypeCriterion__c=='Nombre'}">
+        <lightning:input type="number" name="inputNbr1"  min="{!v.crit.Minimum__c}" max="{!v.crit.Maximum__c}" 
+         label="{!v.crit.criterion__r.Name}"  required="{!v.crit.Mandatory__c}"  aura:id="critform" value="{!v.crit.Valeur__c}"
+         messageWhenRangeOverflow="{!v.crit.MessageRangeOverFlow__c}" messageWhenRangeUnderflow="{!v.crit.MessageRangeUnderFlow__c}" messageWhenValueMissing="{!v.crit.MessageValueMissing__c}"
+        />   	
+    </aura:if>
+    
+    <!-- // Input Date  -->
+    <aura:if isTrue="{!v.crit.criterion__r.TypeCriterion__c=='Date'}">  	
+        <lightning:input type="date" label="{!v.crit.criterion__r.Name}" name="date" required="{!v.crit.Mandatory__c}"  aura:id="critform" value="{!v.crit.Valeur__c}" />
+    </aura:if>
+    
+    <!-- // Input Checkbox  -->
+    <aura:if isTrue="{!v.crit.criterion__r.TypeCriterion__c=='Case à cocher'}">
+        <lightning:input type="checkbox" label="{!v.crit.criterion__r.Name}" name="date" required="{!v.crit.Mandatory__c}"  aura:id="critform" value="{!v.crit.Valeur__c}" />
+    </aura:if>
+    
+    
+    
+</aura:component>

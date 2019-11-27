@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case01_IfOthers_ValueOther</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.BypassVR__c = False &amp;&amp; ISBLANK( Other__c ) &amp;&amp;
+(ISPICKVAL( ReasonsTermination__c  ,&quot;Autre&quot;) 
+|| 
+ISPICKVAL( ReasonsTermination__c ,&quot;Modification de déclaration&quot;)
+|| 
+ISPICKVAL( ReasonsTermination__c ,&quot;Erreur d&#39;autorisation&quot;)
+)</errorConditionFormula>
+    <errorMessage>Merci de saisir un sous motif dans le champ &quot; Autre&quot; pour ce motif de résiliation</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Brouillon</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cloturée - Gagnée</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Clôturée - Fermée</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>En cours</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

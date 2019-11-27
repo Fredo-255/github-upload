@@ -1,0 +1,178 @@
+{
+    "assess-response": {
+        "global-instance": {
+            "attribute": [
+                {
+                    "@id": "NUM_MT_HT_SACEM",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 160.0,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_MT_HT_SACEM",
+                            "@type": "currency",
+                            "@text": "NUM_MT_HT_SACEM est 160,00.",
+                            "@inferred": "true",
+                            "number-val": 160.0,
+                            "attribute-node": {
+                                "@id": "dn:1",
+                                "@entity-id": "global",
+                                "@instance-id": "global",
+                                "@hypothetical-instance": "false",
+                                "@attribute-id": "NUM_REDEV_SACEM",
+                                "@type": "number",
+                                "@text": "Montant redevance SACEM est 160.",
+                                "@inferred": "true",
+                                "number-val": 160.0,
+                                "attribute-node": [
+                                    {
+                                        "@id": "dn:2",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "CHR_PERIODE",
+                                        "@type": "text",
+                                        "@text": "Période est ANNUELLE.",
+                                        "@inferred": "false",
+                                        "text-val": "ANNUELLE"
+                                    },
+                                    {
+                                        "@id": "dn:3",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "a5b64f24-b9df-4450-8839-408bdd1cdf95",
+                                        "@type": "number",
+                                        "@text": "Prix HT Annuel est 160.",
+                                        "@inferred": "true",
+                                        "number-val": 160.0,
+                                        "attribute-node": [
+                                            {
+                                                "@id": "dn:4",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REVENU_DSP_TARIF",
+                                                "@type": "number",
+                                                "@text": "Revenu DSP est 19 000.",
+                                                "@inferred": "false",
+                                                "number-val": 19000.0
+                                            },
+                                            {
+                                                "@id": "dn:5",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_NB_FLUX",
+                                                "@type": "number",
+                                                "@text": "NUM_NB_FLUX est 2.",
+                                                "@inferred": "false",
+                                                "number-val": 2.0
+                                            },
+                                            {
+                                                "@id": "dn:6",
+                                                "@entity-id": "global",
+                                                "@instance-id": "global",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_MIN_WR",
+                                                "@type": "number",
+                                                "@text": "Minimum pour WebRadio annuel est 80.",
+                                                "@inferred": "true",
+                                                "number-val": 80.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_MT_HT_SACEM_UTILE",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 160.0,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_MT_HT_SACEM_UTILE",
+                            "@type": "currency",
+                            "@text": "NUM_MT_HT_SACEM_UTILE est 160,00.",
+                            "@inferred": "true",
+                            "number-val": 160.0,
+                            "attribute-node": {
+                                "@id": "dn:3",
+                                "@entity-id": "global",
+                                "@instance-id": "global",
+                                "@hypothetical-instance": "false",
+                                "@attribute-id": "WEBRADIO",
+                                "@type": "currency",
+                                "@text": "WEBRADIO est 160,00.",
+                                "@inferred": "true",
+                                "number-val": 160.0,
+                                "attribute-node": [
+                                    {
+                                        "@id": "dn:5",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "DEP",
+                                        "@type": "currency",
+                                        "@text": "DEP est 120,00.",
+                                        "@inferred": "true",
+                                        "number-val": 120.0
+                                    },
+                                    {
+                                        "@id": "dn:6",
+                                        "@entity-id": "global",
+                                        "@instance-id": "global",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "DRM",
+                                        "@type": "currency",
+                                        "@text": "DRM est 40,00.",
+                                        "@inferred": "true",
+                                        "number-val": 40.0
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "@id": "CHR_OFFRE",
+                    "@type": "text",
+                    "text-val": "WEB_RADIO_GEN_A"
+                },
+                {
+                    "@id": "DAT_DATE_DEB_CONTRAT",
+                    "@type": "date",
+                    "date-val": "2019-09-14"
+                },
+                {
+                    "@id": "NUM_REVENU_DSP_TARIF",
+                    "@type": "number",
+                    "number-val": 19000.0
+                },
+                {
+                    "@id": "NUM_NB_FLUX",
+                    "@type": "number",
+                    "number-val": 2.0
+                },
+                {
+                    "@id": "CHR_PERIODE",
+                    "@type": "text",
+                    "text-val": "ANNUELLE"
+                }
+            ]
+        }
+    }
+}

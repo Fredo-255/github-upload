@@ -1,0 +1,30 @@
+<template>
+        <!-- Start New offer List-->
+        <div class="slds-grid slds-wrap">
+          <template for:each={offers} for:item="offer">
+                  <div  key={offer.Id} class="slds-col slds-p-around_small slds-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-4">
+                      <div  id={offer.Id} data-offerid={offer.Id}  onclick={handleclickoffer}>
+                          <div >
+                            <!-- #####  RECTO ####-->
+                            <div class="familyCardOffer familyCard content">
+                               <!-- ### Image de la famille ###-->
+                              <div class="imgContOffer">
+                                <img src={offer.Picture__c} alt="Image offre" />
+                                <div class="titleOffer">
+                                    <h1>{offer.Name}</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+               </div>
+          </template>  
+        </div>    
+        <br><br>
+        <!--End New Offer List-->
+        <div> 
+            <div class="slds-float_left">
+                <lightning-button  label="PRECEDENT" title="PRECEDENT" onclick={handleclickprevious} class="btnPrevious slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>  
+    </template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFF01_EndingDateValidity</fullName>
+    <active>true</active>
+    <description>Date de fin de validité ne peut être inférieure à la Date de début de validité</description>
+    <errorConditionFormula>NOT(ISNULL( EndingDateValidity__c )) &amp;&amp; EndingDateValidity__c  &lt;  StartingDateValidity__c</errorConditionFormula>
+    <errorMessage>Date de fin de validité ne peut être inférieure à la Date de début de validité</errorMessage>
+</ValidationRule>

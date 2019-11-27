@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/lWC_CriterionConfig_V0": [
+                "../../../../progressif/main/default/lwc/lWC_CriterionConfig_V0/lWC_CriterionConfig_V0.js"
+            ],
+            "c/lwcAddCriterion": [
+                "../../../../progressif/main/default/lwc/lwcAddCriterion/lwcAddCriterion.js"
+            ],
+            "c/lwcCriterionList": [
+                "../../../../progressif/main/default/lwc/lwcCriterionList/lwcCriterionList.js"
+            ],
+            "c/lwcOfferFamilly": [
+                "../../../../progressif/main/default/lwc/lwcOfferFamilly/lwcOfferFamilly.js"
+            ],
+            "c/lwcOfferList": [
+                "../../../../progressif/main/default/lwc/lwcOfferList/lwcOfferList.js"
+            ],
+            "c/lwc_OfferPreviewCriterion": [
+                "../../../../progressif/main/default/lwc/lwc_OfferPreviewCriterion/lwc_OfferPreviewCriterion.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

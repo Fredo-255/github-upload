@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_agency__c</fullName>
+    <description>Type d&#39;agence de l&#39;Unité organisationnelle</description>
+    <externalId>false</externalId>
+    <label>Type d&#39;agence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Délégation</fullName>
+                <default>false</default>
+                <label>Délégation</label>
+            </value>
+            <value>
+                <fullName>Bureau local</fullName>
+                <default>false</default>
+                <label>Bureau local</label>
+            </value>
+            <value>
+                <fullName>Direction régionale</fullName>
+                <default>false</default>
+                <label>Direction régionale</label>
+            </value>
+            <value>
+                <fullName>Direction territoriale</fullName>
+                <default>false</default>
+                <label>Direction territoriale</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

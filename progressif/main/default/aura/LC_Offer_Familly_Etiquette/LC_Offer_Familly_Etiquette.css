@@ -1,0 +1,351 @@
+.THIS.etiquetteProjet:hover {
+	cursor: pointer;
+}
+
+.THIS.etiquettePrivee:hover {
+	cursor: default;
+}
+
+.THIS .cardStyle {
+	height: 350px;
+    border-radius: 2px;
+    box-shadow: 7px 7px 20px -8px #cecece;
+    border: 1px solid #e84563;
+}
+
+.THIS .cardStyle:hover {
+	box-shadow: 7px 7px 20px -8px #e6798d;
+}
+
+.THIS .cardStylePrive:hover {
+	box-shadow: 7px 7px 20px -8px #cecece;
+}
+
+
+/* Chrome, Firefox, Edge Only */
+@supports (-webkit-appearance:none) {
+    .THIS .slds-card__header .slds-media__body{
+        max-height: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    } 
+}
+
+/* IE 10, IE 11 Only */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .THIS .slds-card__header .slds-media__body{
+        max-height: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    .THIS .slds-card__header.slds-grid{
+        display: block !important;
+    }
+}
+
+.THIS .inscriptionLink {
+	position: absolute;
+	right: 15px;
+    bottom: 10px;
+}
+
+.THIS .linkInscription{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #e84563;
+}
+
+.THIS .linkInscription:hover{
+    color: #e84563;
+}
+
+.THIS .inscriptionLink>a {
+	color: #009fa6;
+}
+
+.THIS .slds-badge{
+    font-size: 10px;
+}
+
+.THIS .badgeContainer {
+    position: absolute;
+    bottom: 16px;
+    width: 88%;
+    display: flex;
+    margin-right: 6px;
+}
+
+.THIS .etiquetteBadge {
+	border: 1px solid #077d88;
+	min-width: 60px;
+	text-align: center;
+	vertical-align: middle;
+    margin-right: 5px;
+    background: #189eaf;
+    color: #fff;
+}
+
+
+.THIS .badgePrive {
+    background-color: #f77990;
+    border: 1px solid #e84563;
+}
+
+.THIS .badgeSecret {
+    background-color: #aa0404;
+    border: 1px solid #711717;
+}
+
+.THIS .badgeParticipant{
+    background-color: #fffcfc;
+    border: 1px solid #e84563;
+    color: #e84563;
+}
+
+.THIS .showDescription {
+	position: absolute;
+	right: 17px;
+	top: 10px;
+    
+}
+
+.THIS .rectoDescription {
+	height: 205px;
+	overflow-x: auto;
+	padding: 0px 10px;
+    font-family: montserrat;
+}
+
+.THIS .secteurContent{
+    display: inline-block;
+    height: 50px;
+    overflow: auto;
+}
+
+.THIS .hrSeparator {
+	margin-top: 0px;
+	margin-bottom: 18px;
+}
+
+.THIS .hrFrontSeparator {
+	margin-top: 0px;
+    margin-bottom: 9px;
+    border-top: 1px solid #e84563;
+}
+
+/* ******************************************* */
+.THIS .flip-card {
+	background-color: transparent;
+	height: 250px;
+/*	perspective: 1000px;*/
+}
+
+.THIS .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+ /*   perspective: 1000px;*/
+}
+
+.THIS .departementBadge {
+	padding: 3px;
+	border-radius: 4px;
+	border: 1px solid #c3c3c3;
+    background-color: #fff;
+    
+}
+
+.THIS .departementsContainer {
+	max-height: 55px;
+}
+
+.THIS .flip {
+	transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.THIS .flip-card-front, .THIS .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+    
+}
+
+.THIS .slds-card__header {
+    padding: 0 1.3rem 0.3rem 0;
+    /*height: 60px;*/
+}
+
+.THIS .slds-card__header .slds-media__body{
+    white-space: normal;
+}
+
+.THIS .slds-card__header .slds-text-heading_small{
+    font-family: montserrat bold;
+    font-size: 13px;
+}
+
+.THIS .flip-card-back .slds-card__header{
+    padding: 1rem;
+    /*height: 57px;*/
+    text-align: center;
+    color: white !important;
+}
+
+.THIS h1{
+    font-weight: bold;
+}
+
+/* Style the back side */
+.THIS .flip-card-back {
+	background-color: #e84563;
+	color: white;
+	transform: rotateY(180deg);
+	padding: 20px;
+}
+
+.THIS .flip-card-back .slds-card__header-title {
+    text-align: center;
+}
+
+/* SCROLL BAR START */
+/* width */
+.THIS ::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+.THIS ::-webkit-scrollbar-track {
+	background: #e7e8e8;
+	border-radius: 10px;
+}
+
+/* Handle */
+.THIS ::-webkit-scrollbar-thumb {
+	background: #a09e9e;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+.THIS ::-webkit-scrollbar-thumb:hover {
+	background: #00a9b9;
+}
+/* SCROLL BAR END */
+
+
+.THIS .frontButton:focus{
+    box-shadow: none;
+}
+
+.THIS .iconFront {
+	margin-left: 5px;
+}
+
+.THIS .iconFront svg {
+	fill: #00494d;
+}
+
+.THIS .iconFront:hover svg {
+	fill: #9fdcdf;
+}
+
+.THIS .icn {
+	backface-visibility: hidden;
+}
+
+.THIS .hide {
+	display: none !important;
+}
+
+.THIS .slds-accordion__content {
+	transition: all 0.8s ease !important;
+}
+
+
+
+/*#############################################################*/
+/*################### FAMILY CARD LOOK & FEEL ################*/
+/*#############################################################*/
+
+
+.THIS .familyCard {
+    border-radius: .25rem;
+    border: 1px solid #bdbdbd;
+   /* background: #fff;*/
+    height: 15rem;
+    box-shadow: 7px 7px 20px -5px rgba(156, 156, 156, 0.5);
+}
+
+.THIS .familyCard:hover {
+    cursor: pointer;
+    border-color:#e84563;
+    box-shadow: 7px 7px 20px -5px #ea98a7;
+}
+
+.THIS .familyCard .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.THIS .familyCard .imgContainer{
+   /* background: url(https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);*/
+    height: 65%;
+    background-size: cover;   
+    border-bottom: 3px solid #e84563;
+}
+
+.THIS .familyCard .titre{
+    color: #333;
+    font-weight: bold;
+    font-family: montserrat;
+    padding: 0;
+    max-height: 4.25rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+    padding: 10px;
+    text-align:center;
+    /*border-top: 3px solid #189eaf;*/
+}
+.THIS .familyCard .titre p{
+    font-size: 15px !important;
+    text-transform: uppercase;
+}
+.THIS .familyCard .date{
+    position: absolute;
+    width: 55px;
+    font-family: montserrat;
+    white-space: normal;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(232, 69, 99, 0.75);
+    /*background: rgba(24, 158, 175, 0.75);*/
+    top: 0;
+    right: 5%;
+    height: 2rem;
+    line-height: 1.1;
+    padding-top: 7px;
+}
+
+.THIS .familyCard .date p{
+    font-size: 20px !important;
+}
+
+.THIS .familyCard .cardContent{
+    padding: 0 0.75rem;
+}
+
+
+.THIS .familyCard .ville, .THIS.familyCard .theme{
+    display: flex;
+    margin: 0.25rem 0;
+}

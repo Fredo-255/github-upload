@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContacterSupport</fullName>
+    <active>true</active>
+    <businessProcess>Demande client de résiliation</businessProcess>
+    <description>Type d&#39;enregistrement de case pour la communauté</description>
+    <label>Contacter Support</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Basse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moyenne</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Fonctionnalité compliquée</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions non claires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L%27utilisateur n%27a pas assisté à la formation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nouveau problème</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème existant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonsTermination__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dénonciation de contrat par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erreur d%27autorisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fermeture administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de déclaration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Demande de fonctionnalité</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demande de résiliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problème</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UnderRaisons__c</picklist>
+        <values>
+            <fullName>Arrêt des diffusions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposition à vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redressement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

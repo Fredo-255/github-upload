@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_modification_devise</fullName>
+    <active>true</active>
+    <description>Le champ devise ne doit pas être modifiable sur le compte PM pour un Chargé de clientèle</description>
+    <errorConditionFormula>ISCHANGED( CurrencyIsoCode ) &amp;&amp; $Profile.Id = &quot;00e1w000000M4zO&quot; &amp;&amp; $User.BypassVR__c = false &amp;&amp; RecordType.Id = &quot;0121t000000V2uv&quot;</errorConditionFormula>
+    <errorDisplayField>CurrencyIsoCode</errorDisplayField>
+    <errorMessage>Merci de ne pas modifier la devise de ce compte</errorMessage>
+</ValidationRule>

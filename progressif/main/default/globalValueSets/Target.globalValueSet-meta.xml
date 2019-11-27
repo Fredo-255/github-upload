@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Standard</fullName>
+        <default>true</default>
+        <label>Standard</label>
+    </customValue>
+    <customValue>
+        <fullName>Espace de diffusion</fullName>
+        <default>false</default>
+        <label>Espace de diffusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Moyen de diffusion</fullName>
+        <default>false</default>
+        <label>Moyen de diffusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Point de diffusion</fullName>
+        <default>false</default>
+        <label>Point de diffusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Autre</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Autre</label>
+    </customValue>
+    <masterLabel>Cible</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

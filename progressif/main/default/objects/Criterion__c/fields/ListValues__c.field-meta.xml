@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ListValues__c</fullName>
+    <description>Les valeurs de la Picklist  , exemple (Val1,Val2,.....)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Les valeurs de la Picklist ,exemple (Val1,Val2,.....)</inlineHelpText>
+    <label>Liste des valeurs</label>
+    <length>150</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<template>
+    <div class="app slds-p-around_x-large criterion ">
+        <h3>DETAILS DE VOTRE AUTORISATION:</h3>
+        <br>
+                <template for:each={criteres} for:item="crit">
+                
+                    <div key={crit.Id}>
+                       <c-lwc-add-criterion crit={crit}></c-lwc-add-criterion>
+                        </div>
+                </template>
+        
+       <br><br>
+       <div> 
+            <div class="slds-float_left">
+                <lightning-button   label="PRECEDENT" title="PRECEDENT" onclick={previous} class="btnPrevious slds-m-left_x-small"></lightning-button>
+            </div>
+            <div class="slds-float_right">
+                <lightning-button   label="CONTINUER" title="CONTINUER"  onclick={SaveCrit} class="btnNext slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>  
+   </div>
+</template>

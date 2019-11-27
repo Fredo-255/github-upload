@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TerminationRequest</fullName>
+    <active>true</active>
+    <businessProcess>Demande client de résiliation</businessProcess>
+    <compactLayoutAssignment>CompactLayoutCase</compactLayoutAssignment>
+    <label>Demande de résiliation</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReasonsTermination__c</picklist>
+        <values>
+            <fullName>Autre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dénonciation de contrat par le client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erreur d%27autorisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fermeture administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modification de déclaration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>UnderRaisons__c</picklist>
+        <values>
+            <fullName>Arrêt des diffusions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissolution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opposition à vente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redressement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

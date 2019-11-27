@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level__c</fullName>
+    <description>Niveau d&#39;indentation de la ligne de facturation.
+Les lignes de niveau 0 ou dont le niveau n&#39;est pas renseigné ne sont pas indentées</description>
+    <externalId>false</externalId>
+    <label>NiveauIndentation</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

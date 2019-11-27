@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTR03_SignatureDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISPICKVAL(Status__c, &quot;En cours&quot;)),
+NOT(ISBLANK(SignatureDate__c)),
+ISCHANGED(SignatureDate__c),
+TECH_EditSignatureDate__c = true,
+$User.BypassVR__c = false,
+NOT( $Profile.Id = &quot;00e1t000001d6p5&quot;)
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas modifier la date de signature si le statut est différent de &quot;En cours &quot; et la date de signature est déja renseignée.</errorMessage>
+</ValidationRule>

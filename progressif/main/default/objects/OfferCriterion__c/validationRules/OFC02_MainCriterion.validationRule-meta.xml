@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFC02_MainCriterion</fullName>
+    <active>true</active>
+    <description>Si un critère d&#39;Offre à pour Statut &quot;Principal&quot; alors il ne peut pas être lié à un autre critère via le champ &quot;Critère Principal&quot;</description>
+    <errorConditionFormula>AND(TEXT(Status__c) = &quot;Principal&quot;,
+NOT( ISBLANK( MainCriterion__c  ) ))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Si un critère d&#39;Offre à pour Statut &quot;Principal&quot; alors il ne peut pas être lié à un autre critère via le champ &quot;Critère Principal&quot;</errorMessage>
+</ValidationRule>

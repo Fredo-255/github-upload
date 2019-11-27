@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>LogoSACEMCommunity</letterhead>
+    <name>Relance Client</name>
+    <style>freeForm</style>
+    <subject>Relance Client</subject>
+    <textOnly>Bonjour {!Contracts__c.Contractor__c},
+
+L&#39;équipe SACEM  vous demande par le présent E-mail de bien vouloir nous faire un retour par rapport à notre proposition .
+Merci de visualiser également le  {!Contracts__c.Name} de notre offre .
+
+Cordialement
+
+L&#39;équipe SACEM</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

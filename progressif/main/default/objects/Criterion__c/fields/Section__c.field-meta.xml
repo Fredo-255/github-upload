@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section__c</fullName>
+    <description>Nom de la section dans laquelle affichée le critère sur la page de saisie de l&#39;autorisation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nom de la section dans laquelle affichée le critère sur la page de saisie de l&#39;autorisation</inlineHelpText>
+    <label>Section</label>
+    <length>150</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

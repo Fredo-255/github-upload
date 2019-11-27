@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CurrentOffer__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( EndingDateValidity__c ),
+IF(TODAY() &gt;=  StartingDateValidity__c &amp;&amp;  TECH_NumberOfVenueCriterions__c &gt; 0, true, false ),
+IF(TODAY() &gt;=  StartingDateValidity__c &amp;&amp; TODAY() &lt;= EndingDateValidity__c &amp;&amp;  TECH_NumberOfVenueCriterions__c &gt; 0, true, false))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Offre en vigueur si date du jour comprise dans les dates de validité de l&#39;offre et s&#39;il existe au moins un critère qui a pour cible Point de diffusion</inlineHelpText>
+    <label>Offre en vigueur</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

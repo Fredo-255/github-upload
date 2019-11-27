@@ -1,0 +1,85 @@
+<aura:component  controller="LCCTRL_OfferController" implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" >
+   
+    <aura:attribute name="famof"       type ="OfferFamily__c[]" />
+    <aura:attribute name="selecFamily" type ="Offer__c[]"        />
+    <aura:attribute name="currStp"     type ="string"            />
+    
+    
+    <div id="divEtiquettes" >
+
+        <div class="flip-card">
+            <div aura:id="flip" class="flip-card-inner">
+                
+                <!-- ##### RECTO ####-->
+                <div class="flip-card-front familyCard" id="{!v.famof.Id}" onclick="{!c.offerByFamily}">
+                    <!-- ### Date de l'event ###-->
+                    
+                    <!--<div class="slds-form-element" onclick="{!c.descriptionClick}">
+                        <div class="slds-form-element__icon slds-align-middle">
+                           <button class="frontButton slds-button slds-button_icon slds-button slds-button_icon">
+                              <lightning:icon class="iconFront" iconName="utility:info" size="x-small" />
+                           </button>
+                        </div>
+                    </div>-->
+                    
+                    <div class="date" onclick="{!c.descriptionClick}">
+                        <p>i</p>
+                    </div>
+                    
+                    <!-- ### Image de l'event ###-->
+                    <div class="imgContainer">
+                        <img src="{!v.famof.Url__c}"/>
+                    </div>
+                    
+                    <div class="cardContent">
+                        <!-- ### Nom famille d'offre ###-->
+                        <div class="titre">
+                            <p>{!v.famof.Name}</p>
+                        </div>
+                        
+                        
+                        <!-- ### THEMES DE L'EVENT ###
+                        <div class="theme">
+                           <div>
+                              <img class="lieuIcon" src="/resource/ICON_Domaine"/> 
+                           </div>
+                           <div class="lieuContainer"> 
+                                <div class="slds-p-right_xx-small slds-p-top_xx-small slds-p-bottom_xx-small slds-truncate">
+                                     <lightning:badge label="THEME" />
+                                </div>
+                           </div>  
+                        </div>
+                        -->
+                    </div>
+                </div>  
+                
+                <!-- ##### VRESO ####-->
+                <div class="flip-card-back slds-media__body familyCard" onclick="{!c.redirigerEvent}">
+                    
+                    <div class="date" onclick="{!c.descriptionClick}">
+                        <p>i</p>
+                    </div>
+                    <div class="cardContent">
+                        <!-- ### Nom famille d'offre ###-->
+                        <div class="titre slds-card__header"  onclick="{!c.redirigerEvent}">
+                            <p>{!v.famof.Name}</p>
+                        </div>
+                        <hr class="hrSeparator" />
+                        <div >
+                            <p>
+                                <aura:unescapedHtml value="Description Famille pdt. Découvrez la fiche stratégique proposées par notre équipe de rédaction pour savoir comment.">
+                                </aura:unescapedHtml>
+                            </p>    
+                        </div>
+                    </div>   
+                    
+                </div> 
+            </div>  
+        </div>  
+        
+        
+    </div>
+    
+    
+    
+</aura:component>

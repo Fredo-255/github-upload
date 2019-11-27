@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REP02_Step_ManualRepValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Not($User.BypassVR__c ) &amp;&amp;
+(ISPICKVAL( PRIORVALUE(Step__c) ,&quot;Brouillon&quot;) ||  ISPICKVAL( PRIORVALUE(Step__c) ,&quot;Validation Interne&quot;))
+&amp;&amp; 
+InternalValidation__c = false &amp;&amp;
+OR(
+ISPICKVAL( Step__c, &quot;Validation Externe&quot;),
+ISPICKVAL( Step__c , &quot;Négociation&quot;),
+ISPICKVAL( Step__c , &quot;Finalisé&quot;),
+ISPICKVAL( Step__c , &quot;Terminé&quot;)
+)</errorConditionFormula>
+    <errorMessage>Merci de ne pas passer manuellement à une étape autre que &quot;Validation Interne&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivityAreas__c</fullName>
+    <description>Permet de définir les secteurs d&#39;activités concernées par l&#39;offre. Une offre peut concernée plusieurs secteurs d&#39;activités</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permet de définir les secteurs d&#39;activités concernées par l&#39;offre. Une offre peut concernée plusieurs secteurs d&#39;activités</inlineHelpText>
+    <label>Secteur d&#39;activités</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Secteurs_d_activites</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

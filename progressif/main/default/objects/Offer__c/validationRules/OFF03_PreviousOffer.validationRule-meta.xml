@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFF03_PreviousOffer</fullName>
+    <active>true</active>
+    <description>L&#39;offre actuelle ne peut pas être sa propre offre précédente</description>
+    <errorConditionFormula>PreviousOffer__c =  Id &amp;&amp;  $User.BypassVR__c = false &amp;&amp; NOT(ISBLANK(PreviousOffer__c))</errorConditionFormula>
+    <errorDisplayField>PreviousOffer__c</errorDisplayField>
+    <errorMessage>Merci de ne pas renseigne une offre comme sa propre offre précédente.</errorMessage>
+</ValidationRule>

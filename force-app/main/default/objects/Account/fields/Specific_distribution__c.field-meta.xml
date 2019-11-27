@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specific_distribution__c</fullName>
+    <description>Information pour les établissements faisant l&#39;objet d&#39;une répartition spécifique</description>
+    <externalId>false</externalId>
+    <label>Répartition spécifique</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disney</fullName>
+                <default>false</default>
+                <label>Disney</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

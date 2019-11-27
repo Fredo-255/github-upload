@@ -1,0 +1,1786 @@
+{
+    "assess-response": {
+        "global-instance": {
+            "attribute": [
+                {
+                    "@id": "NUM_REDEV_SACEM",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 2846.61,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM",
+                            "@type": "currency",
+                            "@text": "Tarif général SACEM HT: €2 846,61.",
+                            "@inferred": "true",
+                            "number-val": 2846.61,
+                            "attribute-node": [
+                                {
+                                    "@id": "dn:3",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_1",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SACEM Autres lieux sonorisés: €1 028,89.",
+                                    "@inferred": "true",
+                                    "number-val": 1028.89,
+                                    "attribute-node": {
+                                        "@id": "dn:9",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                        "@inferred": "true",
+                                        "number-val": 1028.88675,
+                                        "attribute-node": {
+                                            "@id": "dn:17",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                            "@type": "currency",
+                                            "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                            "@inferred": "true",
+                                            "number-val": 1210.455,
+                                            "attribute-node": {
+                                                "@id": "dn:21",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €806,97.",
+                                                "@inferred": "true",
+                                                "number-val": 806.97
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:24",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_2",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SACEM Salle de restauration: €1 028,89.",
+                                    "@inferred": "true",
+                                    "number-val": 1028.89,
+                                    "attribute-node": {
+                                        "@id": "dn:29",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                        "@inferred": "true",
+                                        "number-val": 1028.88675,
+                                        "attribute-node": {
+                                            "@id": "dn:36",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                            "@type": "currency",
+                                            "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                            "@inferred": "true",
+                                            "number-val": 1210.455,
+                                            "attribute-node": {
+                                                "@id": "dn:40",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €806,97.",
+                                                "@inferred": "true",
+                                                "number-val": 806.97
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:43",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "@ESPACE_3",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SACEM Terrasse: €788,83.",
+                                    "@inferred": "true",
+                                    "number-val": 788.83,
+                                    "attribute-node": {
+                                        "@id": "dn:48",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                        "@inferred": "true",
+                                        "number-val": 788.8255,
+                                        "attribute-node": {
+                                            "@id": "dn:55",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_TG",
+                                            "@type": "currency",
+                                            "@text": "Tarif général de base: €928,03.",
+                                            "@inferred": "true",
+                                            "number-val": 928.03
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_MT_SPRE",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 558.26,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_MT_SPRE",
+                            "@type": "currency",
+                            "@text": "Montant SPRE théorique: €558,26.",
+                            "@inferred": "true",
+                            "number-val": 558.26,
+                            "attribute-node": [
+                                {
+                                    "@id": "dn:2",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_1",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SPRE Autres lieux sonorisés: €161,51",
+                                    "@inferred": "true",
+                                    "number-val": 161.5125,
+                                    "attribute-node": {
+                                        "@id": "dn:9",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€53,84.",
+                                        "@inferred": "true",
+                                        "number-val": 161.5125,
+                                        "attribute-node": {
+                                            "@id": "dn:11",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_MT_TG_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Tarif général de base: €215,35",
+                                            "@inferred": "true",
+                                            "number-val": 215.35
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:14",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_2",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SPRE Salle de restauration: €161,51",
+                                    "@inferred": "true",
+                                    "number-val": 161.5125,
+                                    "attribute-node": {
+                                        "@id": "dn:21",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€53,84.",
+                                        "@inferred": "true",
+                                        "number-val": 161.5125,
+                                        "attribute-node": {
+                                            "@id": "dn:22",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_MT_TG_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Tarif général de base: €215,35",
+                                            "@inferred": "true",
+                                            "number-val": 215.35
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:25",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "@ESPACE_3",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                    "@type": "currency",
+                                    "@text": "Tarif général SPRE Terrasse: €235,24",
+                                    "@inferred": "true",
+                                    "number-val": 235.2375,
+                                    "attribute-node": {
+                                        "@id": "dn:32",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€78,41.",
+                                        "@inferred": "true",
+                                        "number-val": 235.2375,
+                                        "attribute-node": {
+                                            "@id": "dn:33",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_MT_TG_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Tarif général de base: €313,65",
+                                            "@inferred": "true",
+                                            "number-val": 313.65
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TG_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 2846.61,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif général SACEM HT: €2 846,61.",
+                            "@inferred": "true",
+                            "number-val": 2846.61,
+                            "attribute-node": [
+                                {
+                                    "@id": "dn:3",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_1",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Autres lieux sonorisés: €1 028,89.",
+                                    "@inferred": "true",
+                                    "number-val": 1028.89,
+                                    "attribute-node": {
+                                        "@id": "dn:7",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                        "@inferred": "true",
+                                        "number-val": 1028.88675,
+                                        "attribute-node": {
+                                            "@id": "dn:15",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                            "@type": "currency",
+                                            "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                            "@inferred": "true",
+                                            "number-val": 1210.455,
+                                            "attribute-node": {
+                                                "@id": "dn:19",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €806,97.",
+                                                "@inferred": "true",
+                                                "number-val": 806.97
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:22",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_2",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Salle de restauration: €1 028,89.",
+                                    "@inferred": "true",
+                                    "number-val": 1028.89,
+                                    "attribute-node": {
+                                        "@id": "dn:26",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                        "@inferred": "true",
+                                        "number-val": 1028.88675,
+                                        "attribute-node": {
+                                            "@id": "dn:33",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                            "@type": "currency",
+                                            "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                            "@inferred": "true",
+                                            "number-val": 1210.455,
+                                            "attribute-node": {
+                                                "@id": "dn:37",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €806,97.",
+                                                "@inferred": "true",
+                                                "number-val": 806.97
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:40",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "@ESPACE_3",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Terrasse: €788,83.",
+                                    "@inferred": "true",
+                                    "number-val": 788.83,
+                                    "attribute-node": {
+                                        "@id": "dn:44",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                        "@type": "currency",
+                                        "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                        "@inferred": "true",
+                                        "number-val": 788.8255,
+                                        "attribute-node": {
+                                            "@id": "dn:51",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_TG",
+                                            "@type": "currency",
+                                            "@text": "Tarif général de base: €928,03.",
+                                            "@inferred": "true",
+                                            "number-val": 928.03
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TR_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 2277.29,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif réduit SACEM HT: €2 277,29.",
+                            "@inferred": "true",
+                            "number-val": 2277.29,
+                            "attribute-node": [
+                                {
+                                    "@id": "dn:3",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_1",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Autres lieux sonorisés: €823,11.",
+                                    "@inferred": "true",
+                                    "number-val": 823.112,
+                                    "attribute-node": {
+                                        "@id": "dn:7",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                        "@type": "currency",
+                                        "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                        "@inferred": "true",
+                                        "number-val": 823.112,
+                                        "attribute-node": {
+                                            "@id": "dn:10",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                            "@inferred": "true",
+                                            "number-val": 1028.88675,
+                                            "attribute-node": {
+                                                "@id": "dn:18",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                "@type": "currency",
+                                                "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                "@inferred": "true",
+                                                "number-val": 1210.455,
+                                                "attribute-node": {
+                                                    "@id": "dn:22",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_1",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €806,97.",
+                                                    "@inferred": "true",
+                                                    "number-val": 806.97
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:26",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_2",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Salle de restauration: €823,11.",
+                                    "@inferred": "true",
+                                    "number-val": 823.112,
+                                    "attribute-node": {
+                                        "@id": "dn:29",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                        "@type": "currency",
+                                        "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                        "@inferred": "true",
+                                        "number-val": 823.112,
+                                        "attribute-node": {
+                                            "@id": "dn:32",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                            "@inferred": "true",
+                                            "number-val": 1028.88675,
+                                            "attribute-node": {
+                                                "@id": "dn:39",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                "@type": "currency",
+                                                "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                "@inferred": "true",
+                                                "number-val": 1210.455,
+                                                "attribute-node": {
+                                                    "@id": "dn:43",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_2",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €806,97.",
+                                                    "@inferred": "true",
+                                                    "number-val": 806.97
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:47",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "@ESPACE_3",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Terrasse: €631,06.",
+                                    "@inferred": "true",
+                                    "number-val": 631.064,
+                                    "attribute-node": {
+                                        "@id": "dn:50",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                        "@type": "currency",
+                                        "@text": "Réduction (signature dans les délais) de 20%: -€157,77",
+                                        "@inferred": "true",
+                                        "number-val": 631.064,
+                                        "attribute-node": {
+                                            "@id": "dn:53",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                            "@inferred": "true",
+                                            "number-val": 788.8255,
+                                            "attribute-node": {
+                                                "@id": "dn:60",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €928,03.",
+                                                "@inferred": "true",
+                                                "number-val": 928.03
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@id": "NUM_REDEV_SACEM_THEO_TRP_GLOBAL",
+                    "@type": "currency",
+                    "@inferred": "true",
+                    "number-val": 1639.65,
+                    "decision-report": {
+                        "@report-style": "decision-report",
+                        "attribute-node": {
+                            "@id": "dn:0",
+                            "@entity-id": "global",
+                            "@instance-id": "global",
+                            "@hypothetical-instance": "false",
+                            "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_GLOBAL",
+                            "@type": "currency",
+                            "@text": "Tarif réduit protocolaire SACEM HT: €1 639,65.",
+                            "@inferred": "true",
+                            "number-val": 1639.65,
+                            "attribute-node": [
+                                {
+                                    "@id": "dn:3",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_1",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Autres lieux sonorisés: €592,64.",
+                                    "@inferred": "true",
+                                    "number-val": 592.64064,
+                                    "attribute-node": {
+                                        "@id": "dn:7",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                        "@type": "currency",
+                                        "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€230,47",
+                                        "@inferred": "true",
+                                        "number-val": 592.64064,
+                                        "attribute-node": {
+                                            "@id": "dn:10",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                            "@inferred": "true",
+                                            "number-val": 823.112,
+                                            "attribute-node": {
+                                                "@id": "dn:13",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                "@inferred": "true",
+                                                "number-val": 1028.88675,
+                                                "attribute-node": {
+                                                    "@id": "dn:21",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_1",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                    "@type": "currency",
+                                                    "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                    "@inferred": "true",
+                                                    "number-val": 1210.455,
+                                                    "attribute-node": {
+                                                        "@id": "dn:25",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_1",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_TG",
+                                                        "@type": "currency",
+                                                        "@text": "Tarif général de base: €806,97.",
+                                                        "@inferred": "true",
+                                                        "number-val": 806.97
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:30",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "ESPACE_2",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Salle de restauration: €592,64.",
+                                    "@inferred": "true",
+                                    "number-val": 592.64064,
+                                    "attribute-node": {
+                                        "@id": "dn:33",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                        "@type": "currency",
+                                        "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€230,47",
+                                        "@inferred": "true",
+                                        "number-val": 592.64064,
+                                        "attribute-node": {
+                                            "@id": "dn:35",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                            "@inferred": "true",
+                                            "number-val": 823.112,
+                                            "attribute-node": {
+                                                "@id": "dn:38",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                "@inferred": "true",
+                                                "number-val": 1028.88675,
+                                                "attribute-node": {
+                                                    "@id": "dn:45",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_2",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                    "@type": "currency",
+                                                    "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                    "@inferred": "true",
+                                                    "number-val": 1210.455,
+                                                    "attribute-node": {
+                                                        "@id": "dn:49",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_2",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_TG",
+                                                        "@type": "currency",
+                                                        "@text": "Tarif général de base: €806,97.",
+                                                        "@inferred": "true",
+                                                        "number-val": 806.97
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "@id": "dn:54",
+                                    "@entity-id": "ESPACE_SONO",
+                                    "@instance-id": "@ESPACE_3",
+                                    "@hypothetical-instance": "false",
+                                    "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                    "@type": "currency",
+                                    "@text": "Terrasse: €454,37.",
+                                    "@inferred": "true",
+                                    "number-val": 454.36608,
+                                    "attribute-node": {
+                                        "@id": "dn:57",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                        "@type": "currency",
+                                        "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€176,70",
+                                        "@inferred": "true",
+                                        "number-val": 454.36608,
+                                        "attribute-node": {
+                                            "@id": "dn:59",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€157,77",
+                                            "@inferred": "true",
+                                            "number-val": 631.064,
+                                            "attribute-node": {
+                                                "@id": "dn:62",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                                "@inferred": "true",
+                                                "number-val": 788.8255,
+                                                "attribute-node": {
+                                                    "@id": "dn:69",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "@ESPACE_3",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €928,03.",
+                                                    "@inferred": "true",
+                                                    "number-val": 928.03
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "@id": "CHR_ABATMT_TR",
+                    "@type": "text",
+                    "text-val": "TRTG"
+                },
+                {
+                    "@id": "CHR_TYPE_CONTRAT",
+                    "@type": "text",
+                    "text-val": "CAF_REST_PROVN"
+                },
+                {
+                    "@id": "CHR_TYPE_TARIF",
+                    "@type": "text",
+                    "text-val": "TG"
+                },
+                {
+                    "@id": "CHR_TYPE_TARIF_SPRE",
+                    "@type": "text",
+                    "text-val": "TG"
+                },
+                {
+                    "@id": "CHR_TYP_ETAB",
+                    "@type": "text",
+                    "text-val": "RAM"
+                },
+                {
+                    "@id": "DAT_DAT_DBT_CONTRAT",
+                    "@type": "date",
+                    "date-val": "2019-09-01"
+                },
+                {
+                    "@id": "NUM_MT_GARDEFOU",
+                    "@type": "currency",
+                    "uncertain-val": null
+                },
+                {
+                    "@id": "NUM_NBR_HABTNT",
+                    "@type": "number",
+                    "number-val": 15001.0
+                },
+                {
+                    "@id": "NUM_NBR_JOUR_HEBDO",
+                    "@type": "number",
+                    "number-val": 5.0
+                },
+                {
+                    "@id": "TRU_ABATMT_CA",
+                    "@type": "boolean",
+                    "boolean-val": true
+                },
+                {
+                    "@id": "NUM_NBR_HABTNT_SPRE",
+                    "@type": "number",
+                    "number-val": 15001.0
+                }
+            ],
+            "entity": {
+                "@id": "ESPACE_SONO",
+                "@inferred": "false",
+                "instance": [
+                    {
+                        "@id": "ESPACE_1",
+                        "attribute": [
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 1028.89,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Autres lieux sonorisés: €1 028,89.",
+                                        "@inferred": "true",
+                                        "number-val": 1028.89,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                            "@inferred": "true",
+                                            "number-val": 1028.88675,
+                                            "attribute-node": {
+                                                "@id": "dn:12",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                "@type": "currency",
+                                                "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                "@inferred": "true",
+                                                "number-val": 1210.455,
+                                                "attribute-node": {
+                                                    "@id": "dn:16",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_1",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €806,97.",
+                                                    "@inferred": "true",
+                                                    "number-val": 806.97
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 592.64064,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Autres lieux sonorisés: €592,64.",
+                                        "@inferred": "true",
+                                        "number-val": 592.64064,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                            "@type": "currency",
+                                            "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€230,47",
+                                            "@inferred": "true",
+                                            "number-val": 592.64064,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                                "@type": "currency",
+                                                "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                                "@inferred": "true",
+                                                "number-val": 823.112,
+                                                "attribute-node": {
+                                                    "@id": "dn:10",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_1",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                    "@type": "currency",
+                                                    "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                    "@inferred": "true",
+                                                    "number-val": 1028.88675,
+                                                    "attribute-node": {
+                                                        "@id": "dn:18",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_1",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                        "@type": "currency",
+                                                        "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                        "@inferred": "true",
+                                                        "number-val": 1210.455,
+                                                        "attribute-node": {
+                                                            "@id": "dn:22",
+                                                            "@entity-id": "ESPACE_SONO",
+                                                            "@instance-id": "ESPACE_1",
+                                                            "@hypothetical-instance": "false",
+                                                            "@attribute-id": "NUM_TG",
+                                                            "@type": "currency",
+                                                            "@text": "Tarif général de base: €806,97.",
+                                                            "@inferred": "true",
+                                                            "number-val": 806.97
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "uncertain-val": null,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Redevance de Espace sonorisé n'est pas certain",
+                                        "@inferred": "true",
+                                        "uncertain-val": null
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 161.5125,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Tarif général SPRE Autres lieux sonorisés: €161,51",
+                                        "@inferred": "true",
+                                        "number-val": 161.5125,
+                                        "attribute-node": {
+                                            "@id": "dn:7",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€53,84.",
+                                            "@inferred": "true",
+                                            "number-val": 161.5125,
+                                            "attribute-node": {
+                                                "@id": "dn:9",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_MT_TG_SPRE",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €215,35",
+                                                "@inferred": "true",
+                                                "number-val": 215.35
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 823.112,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_1",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Autres lieux sonorisés: €823,11.",
+                                        "@inferred": "true",
+                                        "number-val": 823.112,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_1",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                            "@inferred": "true",
+                                            "number-val": 823.112,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_1",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                "@inferred": "true",
+                                                "number-val": 1028.88675,
+                                                "attribute-node": {
+                                                    "@id": "dn:15",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_1",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                    "@type": "currency",
+                                                    "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                    "@inferred": "true",
+                                                    "number-val": 1210.455,
+                                                    "attribute-node": {
+                                                        "@id": "dn:19",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_1",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_TG",
+                                                        "@type": "currency",
+                                                        "@text": "Tarif général de base: €806,97.",
+                                                        "@inferred": "true",
+                                                        "number-val": 806.97
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "CHR_TYPE_ESPACE_SONO",
+                                "@type": "text",
+                                "text-val": "Autres lieux sonorisés"
+                            },
+                            {
+                                "@id": "NUM_CONTENANCE_ESPACE",
+                                "@type": "number",
+                                "number-val": 11.0
+                            },
+                            {
+                                "@id": "NUM_NBR_MOIS_EXPL",
+                                "@type": "number",
+                                "number-val": 12.0
+                            }
+                        ],
+                        "entity": {
+                            "@id": "MOYEN_DIFF",
+                            "@inferred": "false",
+                            "instance": [
+                                {
+                                    "@id": "MOYEN_1_1",
+                                    "attribute": [
+                                        {
+                                            "@id": "NUM_NBR_MOYEN_DIFF",
+                                            "@type": "number",
+                                            "number-val": 1.0
+                                        },
+                                        {
+                                            "@id": "TRU_AJUST_CAL_MD",
+                                            "@type": "boolean",
+                                            "boolean-val": true
+                                        },
+                                        {
+                                            "@id": "CHR_GENRE_MOYEN_DIFF",
+                                            "@type": "text",
+                                            "text-val": "LEC_AV_HP"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@id": "MOYEN_1_2",
+                                    "attribute": [
+                                        {
+                                            "@id": "NUM_NBR_MOYEN_DIFF",
+                                            "@type": "number",
+                                            "number-val": 1.0
+                                        },
+                                        {
+                                            "@id": "TRU_AJUST_CAL_MD",
+                                            "@type": "boolean",
+                                            "boolean-val": true
+                                        },
+                                        {
+                                            "@id": "CHR_GENRE_MOYEN_DIFF",
+                                            "@type": "text",
+                                            "text-val": "LEC_NUM_AV_HP"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "ESPACE_2",
+                        "attribute": [
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 1028.89,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Salle de restauration: €1 028,89.",
+                                        "@inferred": "true",
+                                        "number-val": 1028.89,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                            "@inferred": "true",
+                                            "number-val": 1028.88675,
+                                            "attribute-node": {
+                                                "@id": "dn:12",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                "@type": "currency",
+                                                "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                "@inferred": "true",
+                                                "number-val": 1210.455,
+                                                "attribute-node": {
+                                                    "@id": "dn:16",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_2",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €806,97.",
+                                                    "@inferred": "true",
+                                                    "number-val": 806.97
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 592.64064,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Salle de restauration: €592,64.",
+                                        "@inferred": "true",
+                                        "number-val": 592.64064,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                            "@type": "currency",
+                                            "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€230,47",
+                                            "@inferred": "true",
+                                            "number-val": 592.64064,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                                "@type": "currency",
+                                                "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                                "@inferred": "true",
+                                                "number-val": 823.112,
+                                                "attribute-node": {
+                                                    "@id": "dn:10",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_2",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                    "@type": "currency",
+                                                    "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                    "@inferred": "true",
+                                                    "number-val": 1028.88675,
+                                                    "attribute-node": {
+                                                        "@id": "dn:18",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_2",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                        "@type": "currency",
+                                                        "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                        "@inferred": "true",
+                                                        "number-val": 1210.455,
+                                                        "attribute-node": {
+                                                            "@id": "dn:22",
+                                                            "@entity-id": "ESPACE_SONO",
+                                                            "@instance-id": "ESPACE_2",
+                                                            "@hypothetical-instance": "false",
+                                                            "@attribute-id": "NUM_TG",
+                                                            "@type": "currency",
+                                                            "@text": "Tarif général de base: €806,97.",
+                                                            "@inferred": "true",
+                                                            "number-val": 806.97
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "uncertain-val": null,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Redevance de Espace sonorisé n'est pas certain",
+                                        "@inferred": "true",
+                                        "uncertain-val": null
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 161.5125,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Tarif général SPRE Salle de restauration: €161,51",
+                                        "@inferred": "true",
+                                        "number-val": 161.5125,
+                                        "attribute-node": {
+                                            "@id": "dn:7",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€53,84.",
+                                            "@inferred": "true",
+                                            "number-val": 161.5125,
+                                            "attribute-node": {
+                                                "@id": "dn:9",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_MT_TG_SPRE",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €215,35",
+                                                "@inferred": "true",
+                                                "number-val": 215.35
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 823.112,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "ESPACE_2",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Salle de restauration: €823,11.",
+                                        "@inferred": "true",
+                                        "number-val": 823.112,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "ESPACE_2",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€205,78",
+                                            "@inferred": "true",
+                                            "number-val": 823.112,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "ESPACE_2",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€181,57 ",
+                                                "@inferred": "true",
+                                                "number-val": 1028.88675,
+                                                "attribute-node": {
+                                                    "@id": "dn:15",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "ESPACE_2",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_AJUST_MOYEN_DIFF",
+                                                    "@type": "currency",
+                                                    "@text": "Majoration (pluralité d'appareils) de 50%: €403,48.",
+                                                    "@inferred": "true",
+                                                    "number-val": 1210.455,
+                                                    "attribute-node": {
+                                                        "@id": "dn:19",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "ESPACE_2",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_TG",
+                                                        "@type": "currency",
+                                                        "@text": "Tarif général de base: €806,97.",
+                                                        "@inferred": "true",
+                                                        "number-val": 806.97
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "CHR_TYPE_ESPACE_SONO",
+                                "@type": "text",
+                                "text-val": "Salle de restauration"
+                            },
+                            {
+                                "@id": "NUM_CONTENANCE_ESPACE",
+                                "@type": "number",
+                                "number-val": 30.0
+                            },
+                            {
+                                "@id": "NUM_NBR_MOIS_EXPL",
+                                "@type": "number",
+                                "number-val": 12.0
+                            }
+                        ],
+                        "entity": {
+                            "@id": "MOYEN_DIFF",
+                            "@inferred": "false",
+                            "instance": [
+                                {
+                                    "@id": "MOYEN_2_1",
+                                    "attribute": [
+                                        {
+                                            "@id": "NUM_NBR_MOYEN_DIFF",
+                                            "@type": "number",
+                                            "number-val": 4.0
+                                        },
+                                        {
+                                            "@id": "TRU_AJUST_CAL_MD",
+                                            "@type": "boolean",
+                                            "boolean-val": true
+                                        },
+                                        {
+                                            "@id": "CHR_GENRE_MOYEN_DIFF",
+                                            "@type": "text",
+                                            "text-val": "RAD_K7_AV_HP_HI"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@id": "MOYEN_2_2",
+                                    "attribute": [
+                                        {
+                                            "@id": "NUM_NBR_MOYEN_DIFF",
+                                            "@type": "number",
+                                            "number-val": 1.0
+                                        },
+                                        {
+                                            "@id": "TRU_AJUST_CAL_MD",
+                                            "@type": "boolean",
+                                            "boolean-val": true
+                                        },
+                                        {
+                                            "@id": "CHR_GENRE_MOYEN_DIFF",
+                                            "@type": "text",
+                                            "text-val": "LEC_NUM_SS_HP"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@id": "MOYEN_2_3",
+                                    "attribute": [
+                                        {
+                                            "@id": "NUM_NBR_MOYEN_DIFF",
+                                            "@type": "number",
+                                            "number-val": 1.0
+                                        },
+                                        {
+                                            "@id": "TRU_AJUST_CAL_MD",
+                                            "@type": "boolean",
+                                            "boolean-val": true
+                                        },
+                                        {
+                                            "@id": "CHR_GENRE_MOYEN_DIFF",
+                                            "@type": "text",
+                                            "text-val": "AUTRE_AUDIO_HP"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@id": "@ESPACE_3",
+                        "attribute": [
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 788.83,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TG_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Terrasse: €788,83.",
+                                        "@inferred": "true",
+                                        "number-val": 788.83,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                            "@type": "currency",
+                                            "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                            "@inferred": "true",
+                                            "number-val": 788.8255,
+                                            "attribute-node": {
+                                                "@id": "dn:12",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_TG",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €928,03.",
+                                                "@inferred": "true",
+                                                "number-val": 928.03
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 454.36608,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TRP_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Terrasse: €454,37.",
+                                        "@inferred": "true",
+                                        "number-val": 454.36608,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TRP",
+                                            "@type": "currency",
+                                            "@text": "Réduction (adhérent à un groupement professionnel ou fédération) de 28%: -€176,70",
+                                            "@inferred": "true",
+                                            "number-val": 454.36608,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                                "@type": "currency",
+                                                "@text": "Réduction (signature dans les délais) de 20%: -€157,77",
+                                                "@inferred": "true",
+                                                "number-val": 631.064,
+                                                "attribute-node": {
+                                                    "@id": "dn:10",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "@ESPACE_3",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                    "@type": "currency",
+                                                    "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                                    "@inferred": "true",
+                                                    "number-val": 788.8255,
+                                                    "attribute-node": {
+                                                        "@id": "dn:18",
+                                                        "@entity-id": "ESPACE_SONO",
+                                                        "@instance-id": "@ESPACE_3",
+                                                        "@hypothetical-instance": "false",
+                                                        "@attribute-id": "NUM_TG",
+                                                        "@type": "currency",
+                                                        "@text": "Tarif général de base: €928,03.",
+                                                        "@inferred": "true",
+                                                        "number-val": 928.03
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "uncertain-val": null,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Redevance de Espace sonorisé n'est pas certain",
+                                        "@inferred": "true",
+                                        "uncertain-val": null
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 235.2375,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_ESPACE_SONORISE_SPRE",
+                                        "@type": "currency",
+                                        "@text": "Tarif général SPRE Terrasse: €235,24",
+                                        "@inferred": "true",
+                                        "number-val": 235.2375,
+                                        "attribute-node": {
+                                            "@id": "dn:7",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TYP_ETAB_SPRE",
+                                            "@type": "currency",
+                                            "@text": "Abattement réglementaire RAM - lieux sonorisés de 25%: -€78,41.",
+                                            "@inferred": "true",
+                                            "number-val": 235.2375,
+                                            "attribute-node": {
+                                                "@id": "dn:9",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_MT_TG_SPRE",
+                                                "@type": "currency",
+                                                "@text": "Tarif général de base: €313,65",
+                                                "@inferred": "true",
+                                                "number-val": 313.65
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                "@type": "currency",
+                                "@inferred": "true",
+                                "number-val": 631.064,
+                                "decision-report": {
+                                    "@report-style": "decision-report",
+                                    "attribute-node": {
+                                        "@id": "dn:0",
+                                        "@entity-id": "ESPACE_SONO",
+                                        "@instance-id": "@ESPACE_3",
+                                        "@hypothetical-instance": "false",
+                                        "@attribute-id": "NUM_REDEV_SACEM_THEO_TR_ESPACE_SONO",
+                                        "@type": "currency",
+                                        "@text": "Terrasse: €631,06.",
+                                        "@inferred": "true",
+                                        "number-val": 631.064,
+                                        "attribute-node": {
+                                            "@id": "dn:4",
+                                            "@entity-id": "ESPACE_SONO",
+                                            "@instance-id": "@ESPACE_3",
+                                            "@hypothetical-instance": "false",
+                                            "@attribute-id": "NUM_REDEV_ABATMT_TR",
+                                            "@type": "currency",
+                                            "@text": "Réduction (signature dans les délais) de 20%: -€157,77",
+                                            "@inferred": "true",
+                                            "number-val": 631.064,
+                                            "attribute-node": {
+                                                "@id": "dn:7",
+                                                "@entity-id": "ESPACE_SONO",
+                                                "@instance-id": "@ESPACE_3",
+                                                "@hypothetical-instance": "false",
+                                                "@attribute-id": "NUM_REDEV_ABATMT_CA",
+                                                "@type": "currency",
+                                                "@text": "Réduction (chiffre d'affaire ne dépassant pas 80000): 15%: -€139,20 ",
+                                                "@inferred": "true",
+                                                "number-val": 788.8255,
+                                                "attribute-node": {
+                                                    "@id": "dn:15",
+                                                    "@entity-id": "ESPACE_SONO",
+                                                    "@instance-id": "@ESPACE_3",
+                                                    "@hypothetical-instance": "false",
+                                                    "@attribute-id": "NUM_TG",
+                                                    "@type": "currency",
+                                                    "@text": "Tarif général de base: €928,03.",
+                                                    "@inferred": "true",
+                                                    "number-val": 928.03
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "@id": "CHR_TYPE_ESPACE_SONO",
+                                "@type": "text",
+                                "text-val": "Terrasse"
+                            },
+                            {
+                                "@id": "NUM_CONTENANCE_ESPACE",
+                                "@type": "number",
+                                "number-val": 45.0
+                            },
+                            {
+                                "@id": "NUM_NBR_MOIS_EXPL",
+                                "@type": "number",
+                                "number-val": 9.0
+                            }
+                        ],
+                        "entity": {
+                            "@id": "MOYEN_DIFF",
+                            "@inferred": "false",
+                            "instance": {
+                                "@id": "MOYEN_3_1",
+                                "attribute": [
+                                    {
+                                        "@id": "NUM_NBR_MOYEN_DIFF",
+                                        "@type": "number",
+                                        "number-val": 1.0
+                                    },
+                                    {
+                                        "@id": "TRU_AJUST_CAL_MD",
+                                        "@type": "boolean",
+                                        "boolean-val": true
+                                    },
+                                    {
+                                        "@id": "CHR_GENRE_MOYEN_DIFF",
+                                        "@type": "text",
+                                        "text-val": "LEC_AV_HP"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

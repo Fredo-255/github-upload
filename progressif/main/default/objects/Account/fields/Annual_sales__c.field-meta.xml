@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_sales__c</fullName>
+    <description>Chiffre d&#39;affaires annuel de l&#39;établissement issu de l&#39;INSEE</description>
+    <externalId>false</externalId>
+    <label>Chiffre d&#39;affaire annuel</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

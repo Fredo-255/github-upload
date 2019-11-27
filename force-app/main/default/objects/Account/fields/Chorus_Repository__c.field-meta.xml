@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chorus_Repository__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicateur positionné si l&#39;établissement publique est référencé dans le portail CHORUS. Le portail CHORUS permet de mettre à disposition  les factures pour ces établissements</description>
+    <externalId>false</externalId>
+    <label>Dépôt Chorus</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

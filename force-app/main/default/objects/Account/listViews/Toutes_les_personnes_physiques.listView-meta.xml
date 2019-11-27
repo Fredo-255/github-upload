@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toutes_les_personnes_physiques</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Type_indicateur__c</columns>
+    <columns>Statut_indicateur__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>PersonAccount.Personne_physique</value>
+    </filters>
+    <label>Toutes les personnes physiques</label>
+</ListView>

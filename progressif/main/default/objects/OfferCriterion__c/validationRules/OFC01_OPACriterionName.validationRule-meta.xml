@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFC01_OPACriterionName</fullName>
+    <active>true</active>
+    <description>Le nom du critère OPA doit être renseigné si l&#39;indicateur d&#39;envoi à OPA est vrai</description>
+    <errorConditionFormula>CriterionToSendToOPA__c = true &amp;&amp; ISBLANK( OPACriterionName__c )</errorConditionFormula>
+    <errorDisplayField>OPACriterionName__c</errorDisplayField>
+    <errorMessage>Merci de renseigner le nom du critère OPA si vous souhaitez inclure ce critère pour la tarification.</errorMessage>
+</ValidationRule>

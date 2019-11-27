@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_de_fin</fullName>
+    <active>true</active>
+    <description>la date de fin ne peut être antérieur à la date de début de validité</description>
+    <errorConditionFormula>End_date__c  &lt;  Start_date__c</errorConditionFormula>
+    <errorDisplayField>End_date__c</errorDisplayField>
+    <errorMessage>La Date de fin ne peut être antérieur à la date de début de validité</errorMessage>
+</ValidationRule>

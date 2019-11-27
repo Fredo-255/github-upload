@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AEROPORT</fullName>
+        <default>false</default>
+        <label>AEROPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>Agences événementielles</fullName>
+        <default>false</default>
+        <label>Agences événementielles</label>
+    </customValue>
+    <customValue>
+        <fullName>BAM</fullName>
+        <default>false</default>
+        <label>BAM</label>
+    </customValue>
+    <customValue>
+        <fullName>BOWLING</fullName>
+        <default>false</default>
+        <label>BOWLING</label>
+    </customValue>
+    <customValue>
+        <fullName>CAMPING</fullName>
+        <default>false</default>
+        <label>CAMPING</label>
+    </customValue>
+    <customValue>
+        <fullName>CASINO</fullName>
+        <default>false</default>
+        <label>CASINO</label>
+    </customValue>
+    <customValue>
+        <fullName>CHR</fullName>
+        <default>false</default>
+        <label>CHR</label>
+    </customValue>
+    <customValue>
+        <fullName>CINEMAS</fullName>
+        <default>false</default>
+        <label>CINEMAS</label>
+    </customValue>
+    <customValue>
+        <fullName>CIRQUES</fullName>
+        <default>false</default>
+        <label>CIRQUES</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCE DE DETAIL</fullName>
+        <default>false</default>
+        <label>COMMERCE DE DETAIL</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCE DE DETAIL de DISQUES</fullName>
+        <default>false</default>
+        <label>COMMERCE DE DETAIL de DISQUES</label>
+    </customValue>
+    <customValue>
+        <fullName>COMMERCE GRANDE DISTRIBUTION</fullName>
+        <default>false</default>
+        <label>COMMERCE GRANDE DISTRIBUTION</label>
+    </customValue>
+    <customValue>
+        <fullName>EDITION &amp; COMMUNICATION</fullName>
+        <default>false</default>
+        <label>EDITION &amp; COMMUNICATION</label>
+    </customValue>
+    <customValue>
+        <fullName>EDS</fullName>
+        <default>false</default>
+        <label>EDS</label>
+    </customValue>
+    <customValue>
+        <fullName>EDS / CABARET</fullName>
+        <default>false</default>
+        <label>EDS / CABARET</label>
+    </customValue>
+    <customValue>
+        <fullName>ENSEIGNEMENT</fullName>
+        <default>false</default>
+        <label>ENSEIGNEMENT</label>
+    </customValue>
+    <customValue>
+        <fullName>ENTREPRISE &amp; ADMINISTRATION</fullName>
+        <default>false</default>
+        <label>ENTREPRISE &amp; ADMINISTRATION</label>
+    </customValue>
+    <customValue>
+        <fullName>EQUIPEMENT SPORTIF</fullName>
+        <default>false</default>
+        <label>EQUIPEMENT SPORTIF</label>
+    </customValue>
+    <customValue>
+        <fullName>ETABL CULTUREL</fullName>
+        <default>false</default>
+        <label>ETABL CULTUREL</label>
+    </customValue>
+    <customValue>
+        <fullName>ETABL SANTE</fullName>
+        <default>false</default>
+        <label>ETABL SANTE</label>
+    </customValue>
+    <customValue>
+        <fullName>EXPLOITANT PARKING</fullName>
+        <default>false</default>
+        <label>EXPLOITANT PARKING</label>
+    </customValue>
+    <customValue>
+        <fullName>HEBERGEMENT TOURISTIQUE</fullName>
+        <default>false</default>
+        <label>HEBERGEMENT TOURISTIQUE</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutions sociales</fullName>
+        <default>false</default>
+        <label>Institutions sociales</label>
+    </customValue>
+    <customValue>
+        <fullName>KARTING</fullName>
+        <default>false</default>
+        <label>KARTING</label>
+    </customValue>
+    <customValue>
+        <fullName>Organisateur événementiel occasionnel</fullName>
+        <default>false</default>
+        <label>Organisateur événementiel occasionnel</label>
+    </customValue>
+    <customValue>
+        <fullName>PARC d&#39;ATTRACTIONS ou de LOISIRS</fullName>
+        <default>false</default>
+        <label>PARC d&#39;ATTRACTIONS ou de LOISIRS</label>
+    </customValue>
+    <customValue>
+        <fullName>PRODUCTEUR de SPECTACLES</fullName>
+        <default>false</default>
+        <label>PRODUCTEUR de SPECTACLES</label>
+    </customValue>
+    <customValue>
+        <fullName>PRODUCTEUR PHONO VIDEO</fullName>
+        <default>false</default>
+        <label>PRODUCTEUR PHONO VIDEO</label>
+    </customValue>
+    <customValue>
+        <fullName>SALLES de JEUX ARCADES</fullName>
+        <default>false</default>
+        <label>SALLES de JEUX ARCADES</label>
+    </customValue>
+    <customValue>
+        <fullName>SALON DE COIFFURE</fullName>
+        <default>false</default>
+        <label>SALON DE COIFFURE</label>
+    </customValue>
+    <customValue>
+        <fullName>SOINS de la PERSONNE</fullName>
+        <default>false</default>
+        <label>SOINS de la PERSONNE</label>
+    </customValue>
+    <customValue>
+        <fullName>SPORT &amp; DANSE</fullName>
+        <default>false</default>
+        <label>SPORT &amp; DANSE</label>
+    </customValue>
+    <customValue>
+        <fullName>STATION SERVICE</fullName>
+        <default>false</default>
+        <label>STATION SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORT VOYAGEURS AERIENS</fullName>
+        <default>false</default>
+        <label>TRANSPORT VOYAGEURS AERIENS</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORT VOYAGEURS FERROVIAIRE</fullName>
+        <default>false</default>
+        <label>TRANSPORT VOYAGEURS FERROVIAIRE</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORT VOYAGEURS MARITIME</fullName>
+        <default>false</default>
+        <label>TRANSPORT VOYAGEURS MARITIME</label>
+    </customValue>
+    <customValue>
+        <fullName>TRANSPORT VOYAGEURS ROUTIER</fullName>
+        <default>false</default>
+        <label>TRANSPORT VOYAGEURS ROUTIER</label>
+    </customValue>
+    <customValue>
+        <fullName>Web radio associative / de particulier</fullName>
+        <default>false</default>
+        <label>Web radio associative / de particulier</label>
+    </customValue>
+    <customValue>
+        <fullName>Web radio associée à une marque (branding)</fullName>
+        <default>false</default>
+        <label>Web radio associée à une marque (branding)</label>
+    </customValue>
+    <customValue>
+        <fullName>Web radio commerciale</fullName>
+        <default>false</default>
+        <label>Web radio commerciale</label>
+    </customValue>
+    <customValue>
+        <fullName>Web reportage</fullName>
+        <default>false</default>
+        <label>Web reportage</label>
+    </customValue>
+    <customValue>
+        <fullName>Web TV</fullName>
+        <default>false</default>
+        <label>Web TV</label>
+    </customValue>
+    <customValue>
+        <fullName>Indetermine</fullName>
+        <default>false</default>
+        <label>Indeterminé</label>
+    </customValue>
+    <masterLabel>Secteurs d&#39;activités</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Autorisation</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.CREATED_DATE</columns>
+    <columns>ASSET.USAGE_END_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.STATUS</field>
+        <operation>equals</operation>
+        <value>1,2</value>
+    </filters>
+    <label>Mes Autorisations Actives</label>
+</ListView>

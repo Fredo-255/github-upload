@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReasonsTermination__c</fullName>
+    <externalId>false</externalId>
+    <label>Motif de résiliation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dénonciation de contrat par la Sacem</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>Fermeture administrative</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>Erreur d&#39;autorisation</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>Intervention non motivée</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>Modification de déclaration</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>Autre</fullName>
+                <default>false</default>
+                <label>6</label>
+            </value>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

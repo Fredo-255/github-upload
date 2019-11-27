@@ -1,0 +1,251 @@
+.THIS p{
+    font-size: 13px;
+}
+.THIS .leftButton{
+     margin-top: 1rem;
+    text-align: -webkit-left;
+}
+.THIS .rightButton{
+     margin-top: 1rem;
+    text-align: -webkit-right;
+}
+.THIS .headertitle{
+    font-weight: bold;
+    color: #00a9b9;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.25rem;
+    margin-top: 1rem;
+
+}
+.THIS .citerionFieldset{
+    border:  1px solid #00a9b9; 
+    margin-bottom: 20px;
+}
+
+.THIS .iconright    {
+    
+    text-align: right;
+    margin-top: 7px;
+}
+
+.THIS .iconright .slds-button_icon-border{
+    line-height: 1;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid rgb(221, 219, 218);
+    transition: border .15s linear;
+    border-color: #E94361;
+    background: #E94361;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.THIS .slds-form-element__help{
+    left : 33%;
+}
+
+.THIS .rgpd p{
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+.THIS .subtitleContainer{
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: #00a9b9;
+}
+
+.THIS .subtitleBold {
+    font-weight: bold;
+    color: #00a9b9;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.THIS .formInput{
+    margin-top: 0.5rem;
+}
+
+.THIS .slds-form-element__label{
+    margin-bottom: 0;
+}
+
+.THIS .slds-input .slds-select{
+    border: none;
+    border-bottom: 1px solid #00a9b9;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+.THIS .slds-select{
+    border: none;
+    border-bottom: 1px solid #00a9b9;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+.THIS .slds-input:focus{
+    box-shadow: none;
+}
+
+.THIS .slds-select:focus{
+    box-shadow: none;
+}
+
+.THIS .slds-form-element__help{
+    font-size: 11px;
+    position: absolute;
+    bottom: -3px;
+}
+
+.THIS .slds-has-error .slds-input {
+    border-color: #c23934;
+    box-shadow: none;
+}
+.THIS .slds-has-error .slds-select {
+    border-color: #c23934;
+    box-shadow: none;
+}
+.THIS .infoBoxContainerRegister{
+    background-color: #e64f4f;
+    border-radius: 5px;
+    width: 28rem;
+    -webkit-box-shadow: 7px 7px 20px -8px rgba(105, 105, 105, 1);
+}
+
+.THIS .infoBoxContainerReset {
+    color: #fff;
+    background-color: #e64f4f;
+    border-radius: 5px;
+    width: 17rem;
+    -webkit-box-shadow: 7px 7px 20px -8px rgba(105, 105, 105, 1);
+}
+
+.THIS ::placeholder {
+    font-size: 12px;
+    color: #4e4e4e;
+}
+
+
+
+
+
+.THIS .comboTypeContact .slds-select_container .slds-select__form-element{
+    font-size: 13px;
+}
+
+.THIS .comboTypeContact .slds-select_container .slds-select .option{
+    font-size: 13px;
+}
+
+.THIS .comboTypeContact .slds-select_container .slds-select .option:hover{
+    background: #e5f6f8;
+}
+
+.THIS .comboTypeContact .slds-select_container .slds-select .option:focus{
+    background: #e5f6f8;
+}
+
+.THIS .comboTypeContact .slds-select_container .slds-select .input{
+    border-color: #00a9b9;
+}
+
+.THIS.comboTypeContact .slds-select_container .slds-select .slds-icon-utility-down{
+        margin-top: -15px;
+}
+
+
+.THIS.comboTypeContact .slds-select_container .slds-select .input:focus{
+    border-color: #00a9b9;
+    box-shadow: #00a9b9 0px 0px 3px;
+}
+
+.THIS .slds-has-error .slds-select_container .slds-select__input{
+    border-color: #c23934;
+    box-shadow: none;
+}
+
+
+.THIS .slds-textarea{
+    height: 5rem;
+    border-radius: 0;
+    border-color: #00a9b9;
+    min-height: 5rem;
+}
+
+.THIS .slds-textarea:focus{
+    border-color: #00a9b9;
+    box-shadow: #00a9b9 0px 0px 3px;
+}
+
+.THIS .inverseButton{
+   color: #E94361  !important;
+    
+   background: #fff  !important; 
+   /*margin-top: -0.5rem !important; */
+}
+
+.THIS .secondButton{
+   color: #fff !important;
+   background:  #00a9b9 !important;  
+   border-color:  #00a9b9 !important;  
+   font-size: 10px !important;
+   height: 30px !important; 
+   margin-top: -0.5rem !important; 
+}
+.THIS .registerButton{
+    border-radius: 5rem;
+    width: auto;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: 13px;
+    margin-top: 1rem;
+    background: #E94361;
+    color: #fff;
+    border-color: #E94361;    
+}
+
+.THIS .registerButton:hover{
+    background: #fbc8d0;  
+    border-color: #fbc8d0;  
+}
+
+.THIS .registerButton:focus{
+    box-shadow: none;  
+}
+
+.THIS .notifShow{
+    animation: fade-in-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.THIS .notifClose{
+    animation: fade-out-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes fade-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.THIS .infoTaskContainer {
+    text-align: left;
+    color: #fff;
+    padding: .8rem 1.5rem;
+}

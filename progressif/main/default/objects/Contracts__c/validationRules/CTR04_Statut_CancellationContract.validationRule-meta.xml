@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTR04_Statut_CancellationContract</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(PRIORVALUE(Status__c),&quot;En cours&quot;))
+&amp;&amp; ISCHANGED(Status__c )
+&amp;&amp; ISPICKVAL ( Status__c ,&quot;Annulé&quot;)
+&amp;&amp; $User.BypassVR__c = false</errorConditionFormula>
+    <errorMessage>Merci de ne pas passer au statut &quot;Annulé &quot; si le statut n&#39;est pas &quot;En cours&quot;</errorMessage>
+</ValidationRule>

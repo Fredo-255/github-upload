@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TECH_EditSignatureDate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Lorsque le statut passe de &quot;En cours&quot; à &quot;Actif&quot; et que la date de signature du contrat n&#39;est pas renseignée, renseigner la date de signature par la date du jour et le champ TECH_EditSignatureDate passe à vrai</description>
+    <externalId>false</externalId>
+    <label>TECH EditSignatureDate</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

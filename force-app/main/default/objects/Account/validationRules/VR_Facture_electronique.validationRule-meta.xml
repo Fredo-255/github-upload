@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Facture_electronique</fullName>
+    <active>true</active>
+    <description>si l&#39;indicateur &quot;Dépôt CHORUS&quot; est positionné à OUI alors l&#39;indicateur &quot;Facture électronique&quot; n&#39;est pas modifiable.</description>
+    <errorConditionFormula>Chorus_Repository__c = true &amp;&amp; ISCHANGED( Electronic_invoice__c ) &amp;&amp;  $Profile.Id = &quot;00e1w000000M4zO&quot; &amp;&amp;  ISPICKVAL(Type, &quot;Prospect&quot;) &amp;&amp;  $User.BypassVR__c = false &amp;&amp;  RecordType.Id = &quot;0121t000000V2uv&quot;</errorConditionFormula>
+    <errorDisplayField>Electronic_invoice__c</errorDisplayField>
+    <errorMessage>Merci de ne pas modifier le choix de facture électronique si l&#39;indicateur CHORUS est à vrai.</errorMessage>
+</ValidationRule>

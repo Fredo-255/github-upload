@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP03_EEALimitedScopeWorld_OnlyAnswer</fullName>
+    <active>true</active>
+    <description>Entre les 3 territoires EEA, Limited Scope &amp; World une seule réponse est  possible</description>
+    <errorConditionFormula>Not($User.BypassVR__c )&amp;&amp; 
+ OR(
+ LimitedScope__c &amp;&amp; EeaSwitzerland__c &amp;&amp;  World__c ,
+ LimitedScope__c &amp;&amp; EeaSwitzerland__c = FALSE &amp;&amp;  World__c ,
+ LimitedScope__c &amp;&amp; EeaSwitzerland__c &amp;&amp; World__c = FALSE ,
+ LimitedScope__c = FALSE &amp;&amp; EeaSwitzerland__c &amp;&amp; World__c 
+
+)</errorConditionFormula>
+    <errorMessage>Merci de ne choisir une seule réponse entre les 3 territoires</errorMessage>
+</ValidationRule>

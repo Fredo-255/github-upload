@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REP01_ManagerAcjDeskOfficer_Obligatoire</fullName>
+    <active>true</active>
+    <description>Lors du passage manuel à l&#39;étape &quot;Validation interne&quot;sur le répertoire , le manager et le chargé de dossier sur l&#39;opportunité doivent être renseignés</description>
+    <errorConditionFormula>Not($User.BypassVR__c)&amp;&amp;ISPICKVAL( Step__c ,&#39;Validation Interne&#39;) &amp;&amp; ISBLANK(Opportunity__r.AcjDeskOfficer__c) &amp;&amp; ISBLANK(Opportunity__r.Manager__c)  ||  
+
+Not($User.BypassVR__c)&amp;&amp;ISPICKVAL( Step__c ,&#39;Validation Interne&#39;) &amp;&amp; ISBLANK(Opportunity__r.AcjDeskOfficer__c) &amp;&amp; Not(ISBLANK(Opportunity__r.Manager__c))  || 
+
+Not($User.BypassVR__c)&amp;&amp;ISPICKVAL( Step__c ,&#39;Validation Interne&#39;) &amp;&amp; Not(ISBLANK(Opportunity__r.AcjDeskOfficer__c)) &amp;&amp; ISBLANK(Opportunity__r.Manager__c)</errorConditionFormula>
+    <errorMessage>Merci de renseigner le manager et le chargé de dossier ACJ sur l&#39;opportunité , pour passer à l&#39;étape &quot; Validation interne &quot; sur le répertoire.</errorMessage>
+</ValidationRule>

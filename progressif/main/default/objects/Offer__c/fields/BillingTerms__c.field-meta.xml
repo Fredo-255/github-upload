@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingTerms__c</fullName>
+    <description>Permet de définir les modalités de facturation de l&#39;offre: avec facturation d&#39;a-valoirs par anticipation sur la base d&#39;une hypothèse puis d&#39;un solde ou sur la base d&#39;une redevance unique quand tous les éléments sont connus. Ce paramètre aura un impact sur les actions possibles pour le déclenchement de la tarification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Permet de définir les modalités de facturation de l&#39;offre: avec facturation d&#39;a-valoirs par anticipation sur la base d&#39;une hypothèse puis d&#39;un solde ou sur la base d&#39;une redevance unique quand tous les éléments sont connus.</inlineHelpText>
+    <label>Modalités de facturation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A-valoirs &amp; Solde</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>Redevance</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

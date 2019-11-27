@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CTR07_ContractTermination</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(TEXT( ReasonsTermination__c )), 
+ISPICKVAL( Status__c , &quot;Résilié&quot;),
+ $User.BypassVR__c =False 
+
+)</errorConditionFormula>
+    <errorMessage>Si le statut du contrat est &quot; Résilié&quot; , merci de renseigner le motif de résiliation.</errorMessage>
+</ValidationRule>

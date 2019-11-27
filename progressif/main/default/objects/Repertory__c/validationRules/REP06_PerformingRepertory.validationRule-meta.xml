@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REP06_PerformingRepertory</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.BypassVR__c = False &amp;&amp;
+PerformingRepertory__c =true &amp;&amp;
+NOT ISBLANK( AvanceMechanicalRepertory__c )</errorConditionFormula>
+    <errorMessage>Merci de ne pas renseigner le champ &quot;Avance Mechanical Repertoire &quot; si la case &quot;Performing Repertoire&quot; est cochée</errorMessage>
+</ValidationRule>

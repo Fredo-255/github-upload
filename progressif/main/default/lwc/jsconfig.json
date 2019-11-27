@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "c/lWC_CriterionConfig_V0": [
+                "lWC_CriterionConfig_V0/lWC_CriterionConfig_V0.js"
+            ],
+            "c/lwcAddCriterion": [
+                "lwcAddCriterion/lwcAddCriterion.js"
+            ],
+            "c/lwcCriterionList": [
+                "lwcCriterionList/lwcCriterionList.js"
+            ],
+            "c/lwcOfferFamilly": [
+                "lwcOfferFamilly/lwcOfferFamilly.js"
+            ],
+            "c/lwcOfferList": [
+                "lwcOfferList/lwcOfferList.js"
+            ],
+            "c/lwc_OfferPreviewCriterion": [
+                "lwc_OfferPreviewCriterion/lwc_OfferPreviewCriterion.js"
+            ]
+        },
+        "experimentalDecorators": true
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

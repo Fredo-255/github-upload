@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActiveOnlineContracts</fullName>
+    <columns>NAME</columns>
+    <columns>VersionNumber__c</columns>
+    <columns>ContractStartingDate__c</columns>
+    <columns>ContractEndDate__c</columns>
+    <columns>Status__c</columns>
+    <columns>AccountName__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contracts__c.OnlineContract</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>En cours,Activé</value>
+    </filters>
+    <label>Contrats Online Actifs et En cours</label>
+</ListView>

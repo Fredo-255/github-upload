@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnderRaisons__c</fullName>
+    <externalId>false</externalId>
+    <label>Sous motif</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ReasonsTermination__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arrêt des diffusions</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>Liquidation</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>Dissolution</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>Redressement</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>Opposition à vente</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Dénonciation de contrat par le client</controllingFieldValue>
+            <valueName>Arrêt des diffusions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fermeture administrative</controllingFieldValue>
+            <valueName>Liquidation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fermeture administrative</controllingFieldValue>
+            <valueName>Dissolution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fermeture administrative</controllingFieldValue>
+            <valueName>Redressement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fermeture administrative</controllingFieldValue>
+            <valueName>Opposition à vente</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
